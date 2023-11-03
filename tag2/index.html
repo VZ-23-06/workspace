@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantische Elemente UL & OL & LI</title>
+</head>
+<!-- Emmet Abkürzung : shift + 1 -->
+
+<body>
+    <!-- header gibt den Kopfbereich der Webseite -->
+    <header>
+        <!-- shift + command + 7 -->
+        <!-- Überschrift "h1" wird nur einmal verwendet - h6 -->
+
+        <h1>Welcome to our Website</h1>
+        <!-- <h2>ich bin h2</h2>
+        <h3>ich bin h3</h3>
+        <h4>ich bin h4</h4>
+        <h5>ich bin h5</h5>
+        <h6>ich bin h6</h6> -->
+
+        <!-- nav wird genutzt um eine navigation zu bauen -->
+        <nav>
+            <!-- Der "href"-Wert ist wie die Adresse oder die Wegbeschreibung zu einer Webseite, einem Dokument, einer Datei oder einer anderen Ressource im Internet. Wenn du auf einen Link klickst, wird der Browser diese Adresse öffnen, damit du die verknüpfte Seite oder Datei ansehen oder herunterladen kannst. -->
+
+            <!-- li ist ein einzelnes listen element & wird nur in der kombination ul oder ol und nav benutzt -->
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </nav>
+
+
+    </header>
+
+    <!-- main gibt den hauptbereich der website an -->
+    <main>
+        <h2>wir sind im Main Bereich</h2>
+
+        <section>
+            <!-- Lorem erzuegt einfach unsinnige Wörter -->
+            <h3>Wir sind im Section Bereich</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsum?</p>
+            <a href="#">Weiter Lesen</a>
+        </section>
+
+        <article>
+            <h3>wir sind im article Bereich</h3>
+            <!-- p tag ist für die Texte -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda temporibus provident asperiores
+                accusantium sequi nam tempora accusamus nemo velit laborum libero labore, recusandae quam commodi ad
+                facilis laudantium! Voluptatem tenetur dolore corrupti fugiat quam tempora obcaecati tempore deserunt
+                cupiditate repudiandae eaque perspiciatis ut aperiam, error eligendi. Doloremque optio reprehenderit
+                eveniet.</p>
+        </article>
+
+        <!-- option + z -->
+        <section>
+            <ul>
+                <li>List one</li>
+                <li>List two</li>
+                <li>List three</li>
+            </ul>
+            <ol>
+                <li>list one</li>
+                <li>list two</li>
+                <li>list three</li>
+            </ol>
+
+            <ol>
+                <li>
+                    Main List
+                    <ul>
+                        <li>test vom Main</li>
+                        <li>test vom Main</li>
+                    </ul>
+                </li>
+                <li>
+                    Neben List
+                    <ul>
+                        <li>test vom Neben</li>
+                        <li>test vom Neben</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <!-- relative pfad -->
+            <li><a href="./pages/impressum.html">Impressum</a></li>
+            <li><a href="./pages/datenschutz.html">Datenschutz</a></li>
+        </nav>
+        <p>beliebste suchmacshine der Welt ist google</p>
+        <a href="https://www.google.de/">Google</a>
+    </footer>
+
+</body>
+
+</html>
