@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>CSS Basics</title>
+
+
+    <style>
+        section {
+            width: 900px;
+            border: 3px solid red;
+        }
+
+        /* div {
+            display: block;
+            background-color: crimson;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        } */
+
+        /* p {
+            background-color: coral;
+        } */
+
+        span {
+            background-color: chartreuse;
+            color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- ! inline-elemnte: a, span, img... -->
+        <!-- ! block elemente: div, p, h1-h6, listen elemente, article, section, header, nav, main, aside, footer... -->
+        <!-- <div>Block-Element -> ich nehme so viel horizontalen Platz ein, wie es mir zur Verfügung steht.
+            <span>Ich nehmen standardmäßig die voll Breit des</span> Containers, in dem ich sich befinden.
+        </div> -->
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ab temporibus alias aliquam ut amet omnis
+            beatae eum. Voluptatum doloribus eaque et provident voluptatem autem nisi, corporis fugit, corrupti dolore
+            tempora saepe est nobis maiores? Assumenda <br>molestias nostrum exercitationem ipsam, consectetur
+            doloremque
+            quos necessitatibus, <br> fuga nobis cumque laudantium a aspernatur!</p>
+
+        <!-- ! nicht semantische Elemente: div, span, hr, br ... -->
+        <!-- ? haben keine spezifische Bedeutung oder Semantik für den Inhalt, den sie umschließen. Sie dienen hauptsächlich dazu, das Layout und die Struktur der Webseite zu organisieren -->
+        <span>inlie-elemnte:ich bin so breit , wie es mein Inhalt erfordert</span>
+
+    </section>
+
+    <!-- <section>
+        <h2>Semantische Elemnte</h2>
+
+        <ol>
+            <li>HEDER -> Für den Kopfbereich der Seite, der oft das Logo, die Überschrift und die Navigationsmenüs
+                enthält.</li>
+            <li>NAV -> Um die Hauptnavigationsmenüs zu kennzeichnen.</li>
+            <li>MAIN -> Für den Hauptinhalt der Seite, der in der Regel einzigartig für diese Seite ist.</li>
+            <li>ARTICLE -> Für eigenständige Artikel oder Beiträge innerhalb der Seite.</li>
+            <li>SECTION -> Um Abschnitte innerhalb des Inhalts zu gruppieren und zu kennzeichnen.</li>
+            <li>ASIDE -> Für Inhalte, die nicht direkt zum Hauptinhalt gehören, wie Nebeninformationen oder Werbung.
+            </li>
+            <li>FOOTER -> Für den Fußbereich der Seite, der oft das Copyright-Datum und Links zu Impressum und
+                Datenschutzerklärung enthält.</li>
+            <li> FIGURE und FIGCAPTION -> Um Bilder und Bildunterschriften zu kennzeichnen.</li>
+        </ol>
+    </section> -->
+
+
+    <!-- #  Inline-Stile führen zu größeren HTML-Dateien, da der CSS-Code für jedes Element wiederholt wird. -->
+    <!-- #  Inline-Stile überschreiben normalerweise externe oder interne Stylesheets, was zu Schwierigkeiten bei der Kaskadierung und Vererbung von Stilen führen kann. -->
+    <!-- #  Inline-Stile können die Zusammenarbeit im Team erschweren, da sie eine klare Trennung von Verantwortlichkeiten zwischen Entwicklern und Designern behindern. -->
+
+    <section>
+        <h2 style="color: red; font-size: 50px;">Nicht semantische <br> <span>Elemente</span> </h2>
+        <ol>
+            <li>DIV -> hauptsächlich für die Gruppierung von Elementen und die Erstellung von Layoutstrukturen.</li>
+            <li>SPAN -> wird of verwendet, um eine Abschnitt von Text innerhalb eines Textabschnitts zu markieren.</li>
+            <li>BR -> wird verwendet, um ein Zeilenumbruch innerhalb eines Texts oder eines inline-Inhalts zu erzwingen
+            </li>
+            <li>HR ->ist eine horizontale Trennlinie</li>
+            <hr>
+        </ol>
+
+    </section>
+
+    <!--  externes stylesheet <link rel="stylesheet" href="..."> -->
+    <article>
+        <p>Erster Abschnitt</p>
+        <p>Zweiter Abschnitt</p>
+        <p>Dritter Abschnitt</p>
+        <p>Vierter Abschnitt</p>
+        <p>Fünfter Abschnitt</p>
+        <p>Sechster Abschnitt</p>
+        <p>Siebter Abschnitt</p>
+    </article>
+
+    <section>
+        <h2>TEXT SHADOW</h2>
+
+    </section>
+
+    <article>
+        <div></div>
+
+    </article>
+
+</body>
+
+</html>

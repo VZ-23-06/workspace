@@ -1,0 +1,97 @@
+/* @font-face{
+    font-family: 'RobotoReg';
+    src: url('../fonts/Roboto-Regular.ttf');
+} */
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf');
+}
+
+/* * Globale Stile für das HTML-Dokument */
+html{
+    font-family: 'Roboto';
+    background-color: rgb(255, 240, 152);
+}
+
+p{
+    cursor: pointer;
+}
+
+
+/* Stile für das zweite <p> in .container */
+article p:nth-of-type(2){
+    color: rgb(47, 47, 255);
+    background-color: aqua;
+    
+}
+
+/* Stile für ungerade <p>-Elemente in article */
+article p:nth-of-type(odd){
+    color: rgb(134, 255, 170);
+    background-color: aqua;
+    
+}
+article p:nth-of-type(odd):hover{
+    color: rgb(0, 94, 28);
+    font-size: 50px;
+    background-color: rgb(132, 0, 255);
+}
+
+/* Stile für gerade <p>-Elemente in article */
+article p:nth-of-type(even):active{
+    color: rgb(123, 0, 128);
+    background-color: aqua;
+}
+
+article p:nth-of-type(even):active{
+    color: rgb(0, 15, 128);
+    background-color: aqua;
+}
+
+/* Stile für das letzte <li> in section */
+li:last-of-type{
+    text-decoration: line-through;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Stile für das letzte <li> in section */
+/* li:first-of-type{
+    color: red;
+} */
+
+li:nth-child(2){
+    color: red ;
+}
+
+section:nth-of-type(3) h2:nth-of-type(1){
+    color: blueviolet;
+    font-size: 100px;
+    text-shadow: 5px 5px 2px black;
+    text-decoration:underline;
+}
+
+/* Stile für das letzte h2-Element im Dokument */
+/* h2:last-of-type {
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 5px 5px 0px #ff0000;
+} */
+
+
+/* Background image */
+article:nth-of-type(2) div{
+    width: 100%;
+    min-height: 200px;
+   /*  background-image: url('../neom-Z6YxSbcIXT0-unsplash.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-position: right; */
+
+    // shortcut
+    background: url('../neom-Z6YxSbcIXT0-unsplash.jpg') center/contain no-repeat;
+
+}
