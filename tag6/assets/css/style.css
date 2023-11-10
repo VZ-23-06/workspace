@@ -43,6 +43,11 @@ li{
     font-size: var(--secondary-fz);
 }
 
+.list-infoStyle{
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
 span {
     font-weight: var(--fweight);
     color: var(--secondary-color);
@@ -53,6 +58,7 @@ span {
 main{
     margin: 30px 40px;
 }
+
 header {
     margin: 5vh 5vw 2vh 5vw;
     text-align: right; 

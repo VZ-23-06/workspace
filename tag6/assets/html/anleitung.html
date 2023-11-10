@@ -59,9 +59,21 @@
             <li>VS Code Terminal öffnen (Shortcut: Command J)</li>
             <ul>
                 <li>Terminal öffnen "Command J"</li>
-                <li>git clone LINK - Klont das Remote-Repository lokal</li>
+                <li> Variante 1 - git clone "LINK" - Klont das Remote-Repository lokal</li>
+                <ul>
+                    <li class="list-infoStyle">Dieser Befehl klont das angegebene Remote-Repository und erstellt ein
+                        neues Verzeichnis, das den
+                        Namen des Repositorys hat, in deinem aktuellen Arbeitsverzeichnis.</li>
+                </ul>
+                <li>Variante 2 - git clone "LINK" . - Klont das Remote-Repository lokal</li>
+                <ul>
+                    <li class="list-infoStyle">Dieser Befehl hat den gleichen Effekt wie der vorherige, aber mit dem
+                        Unterschied, dass das
+                        Remote-Repository in das aktuelle Arbeitsverzeichnis (dargestellt durch .) geklont wird, anstatt
+                        ein neues Verzeichnis mit dem Namen des Repositorys zu erstellen.</li>
+                </ul>
             </ul>
-            <li>Wir müssen uns in den Ordner navigieren:</li>
+            <li> <span>Wenn Variante 1 -</span> Wir müssen uns in den Ordner navigieren:</li>
             <ol>
                 <li>cd "Projekt Name" - Navigiert in den gerade erstellten Projektordner</li>
                 <li>Wenn wir ein Projekt mit mehreren Ordnern haben, müssen wir uns mit cd weiter in die Verzeichnisse
