@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  background-color: aqua;
+}
+
+header nav {
+  text-align: right;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: green;
+  font-size: 2rem;
+}
+
+/* section:nth-of-type(1) {
+  height: 100vh;
+  background-color: brown;
+}
+
+section:nth-of-type(2) {
+  height: 100vh;
+  background-color: chocolate;
+}
+
+section:nth-of-type(3) {
+  height: 100vh;
+  background-color: darksalmon;
+}
+
+.sticky_div {
+  position: sticky;
+  top: 20px;
+} */
+
+/* parantscontainer bekommt immer position relativ */
+/* section {
+  background-color: cadetblue;
+  height: 100vh;
+  position: relative;
+} */
+
+/* children elemente bekommen immer dementprechend position absolut*/
+/* section div:nth-child(1) {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  position: absolute;
+  top: 40px;
+  left: 120px;
+}
+
+section div:nth-child(2) {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(0, 255, 47);
+  position: absolute;
+  bottom: 40px;
+  right: 120px;
+}
+
+section div:nth-child(3) {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 157, 0);
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+} */
+
+section {
+  position: relative;
+  height: 100vh;
+  background-color: bisque;
+}
+
+section div:nth-child(1) {
+  height: 60px;
+  width: 60px;
+  background-color: blue;
+  position: absolute;
+  right: 0;
+}
+
+section div:nth-child(2) {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(0, 255, 0);
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
