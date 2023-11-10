@@ -9,90 +9,98 @@
 </head>
 
 <body>
+  <header>
+    <nav>
+      <a href="./index.html" class="active-link">Git & GitHub</a>
+      <a href="./assets/html/anleitung.html">Anleitung</a>
+      <a href="./assets/html/navigation.html">Navigation</a>
+    </nav>
+  </header>
+
   <main>
     <h1>Was ist Git & GitHub?</h1>
 
-    <div class="d-flex">
-      <h2>Was ist Git?</h2>
-      <img src="./assets/img/Git-Logo-2Color.svg" alt="">
-    </div>
+    <section class="section-flex">
 
-    <section>
-      <p><span>Git</span> ist ein weit verbreitetes verteiltes Versionskontrollsystem.
-        Es wird hauptsächlich von Entwicklern:innen verwendet, um die Versionsgeschichte von Quellcode und anderen
-        Dateien zu verfolgen,
-        Änderungen zu verwalten und die Zusammenarbeit in Softwareentwicklungsprojekten zu erleichtern.
-      </p>
-      <ol>
-        <li><span>Versionskontrolle und Sicherung von Daten: </span> Git ermöglicht die effiziente Verfolgung von
-          Änderungen am Quellcode und anderen Dateien. </li>
-        <li><span>Commits:</span>Ein Commit ist eine Gruppe von Änderungen,
-          die zu einem Zeitpunkt in die Versionsgeschichte aufgenommen werden.
-        </li>
-        <li><span>Branches: </span>Ein Branch ist eine separate Entwicklungslinie,
-          die von der Hauptentwicklungslinie (normalerweise als "Main" bezeichnet) abzweigen kann.
-        </li>
-        <li><span>Merge und Pull Requests: </span>
-          Nachdem Änderungen in einem Branch entwickelt wurden, können sie durch Zusammenführen (Merge) in den Hauptcode
-          integriert werden.
-          In Open-Source-Projekten oder Kollaborationen können wir sogenannte Pull Requests erstellen,
-          um Änderungen in den Hauptcode vorzuschlagen. Andere Entwickler überprüfen diese Änderungen und genehmigen
-          oder lehnen sie ab.
-        </li>
-        <li><span>Konfliktlösung:</span>Wenn zwei oder mehr Entwickler gleichzeitig Änderungen an derselben Datei
-          vornehmen, kann es zu Konflikten kommen.</li>
-        <li><span>Remote-Repositories: </span>Wir können unsere Projekte auf remote gehosteten Git-Servern speichern, um
-          die Zusammenarbeit zu ermöglichen.</li>
-        <ul>
-          <li>GitLab</li>
-          <li>Bitbucket</li>
-        </ul>
-      </ol>
+      <article>
+        <div class="d-flex">
+          <h2>Was ist Git?</h2>
+          <img src="./assets/img/Git-Logo-2Color.svg" alt="">
+        </div>
+        <p><span>Git</span> ist ein weit verbreitetes verteiltes Versionskontrollsystem.
+          Es wird hauptsächlich von Entwicklern:innen verwendet, um die Versionsgeschichte von Quellcode und anderen
+          Dateien zu verfolgen,
+          Änderungen zu verwalten und die Zusammenarbeit in Softwareentwicklungsprojekten zu erleichtern.
+        </p>
+        <ol>
+          <li><span>Versionskontrolle und Sicherung von Daten: </span> Git ermöglicht die effiziente Verfolgung von
+            Änderungen am Quellcode und anderen Dateien. </li>
+          <li><span>Commits:</span>Ein Commit ist eine Gruppe von Änderungen,
+            die zu einem Zeitpunkt in die Versionsgeschichte aufgenommen werden.
+          </li>
+          <li><span>Branches: </span>Ein Branch ist eine separate Entwicklungslinie,
+            die von der Hauptentwicklungslinie (normalerweise als "Main" bezeichnet) abzweigen kann.
+          </li>
+          <li><span>Merge und Pull Requests: </span>
+            Nachdem Änderungen in einem Branch entwickelt wurden, können sie durch Zusammenführen (Merge) in den
+            Hauptcode
+            integriert werden.
+            In Open-Source-Projekten oder Kollaborationen können wir sogenannte Pull Requests erstellen,
+            um Änderungen in den Hauptcode vorzuschlagen. Andere Entwickler überprüfen diese Änderungen und genehmigen
+            oder lehnen sie ab.
+          </li>
+          <li><span>Konfliktlösung:</span>Wenn zwei oder mehr Entwickler gleichzeitig Änderungen an derselben Datei
+            vornehmen, kann es zu Konflikten kommen.</li>
+          <li><span>Remote-Repositories: </span>Wir können unsere Projekte auf remote gehosteten Git-Servern speichern,
+            um
+            die Zusammenarbeit zu ermöglichen.</li>
+          <ul>
+            <li>GitLab</li>
+            <li>Bitbucket</li>
+          </ul>
+        </ol>
+      </article>
+
+      <article>
+        <div class="d-flex">
+          <h2>Was ist GitHub?</h2>
+          <img src="./assets/img/github-mark.png" alt="">
+        </div>
+
+        <p>
+          <span>GitHub</span> ist eine webbasierte Plattform, die hauptsächlich von
+          Entwicklern und Softwareentwicklungsprojekten genutzt wird, um Code zu
+          hosten, zu verwalten und gemeinsam daran zu arbeiten. Es bietet eine
+          Umgebung, in der Entwickler ihre Programmierprojekte speichern,
+          Versionskontrolle durchführen, Änderungen nachverfolgen, Code überprüfen
+          und zusammenarbeiten können.
+        </p>
+
+        <ol>
+          <li>
+            <span>Repositories:</span> Projekte können in sogenannten Repositories gespeichert werden.
+            Hier werden der Quellcode und andere Dateien für ein Projekt aufbewahrt.
+          </li>
+          <li>
+            <span>Versionskontrolle:</span> GitHub verwendet das Versionskontrollsystem Git.
+            Dies ermöglicht es uns, Änderungen am Quellcode zu verfolgen, zu vergleichen und zu verwalten.
+          </li>
+          <li>
+            <span>Branches:</span>Branches: Wir können sogenannte Branches erstellen, um verschiedene
+            Versionen des Codes zu entwickeln. Dies ermöglicht es mehreren
+            Personen, gleichzeitig an verschiedenen Teilen des Projekts zu arbeiten, ohne sich gegenseitig zu
+            beeinträchtigen.
+          </li>
+          <li>
+            <span>Pull Requests:</span>Pull Requests: Wenn Entwickler:innen Änderungen in ein Repository
+            einbringen möchten, können sie einen sogenannten Pull Request (PR)
+            erstellen. Andere Entwickler können dann den vorgeschlagenen Code
+            überprüfen, Kommentare abgeben und die Änderungen genehmigen oder
+            ablehnen, bevor sie in den Hauptcode eingefügt werden.
+          </li>
+        </ol>
+      </article>
     </section>
-
-    <section>
-      <div class="d-flex">
-        <h2>Was ist GitHub?</h2>
-        <img src="./assets/img/github-mark.png" alt="">
-      </div>
-      <p>
-        <span>GitHub</span> ist eine webbasierte Plattform, die hauptsächlich von
-        Entwicklern und Softwareentwicklungsprojekten genutzt wird, um Code zu
-        hosten, zu verwalten und gemeinsam daran zu arbeiten. Es bietet eine
-        Umgebung, in der Entwickler ihre Programmierprojekte speichern,
-        Versionskontrolle durchführen, Änderungen nachverfolgen, Code überprüfen
-        und zusammenarbeiten können.
-      </p>
-
-      <ol>
-        <li>
-          <span>Repositories:</span> Projekte können in sogenannten Repositories gespeichert werden.
-          Hier werden der Quellcode und andere Dateien für ein Projekt aufbewahrt.
-        </li>
-        <li>
-          <span>Versionskontrolle:</span> GitHub verwendet das Versionskontrollsystem Git.
-          Dies ermöglicht es uns, Änderungen am Quellcode zu verfolgen, zu vergleichen und zu verwalten.
-        </li>
-        <li>
-          <span>Branches:</span>Branches: Wir können sogenannte Branches erstellen, um verschiedene
-          Versionen des Codes zu entwickeln. Dies ermöglicht es mehreren
-          Personen, gleichzeitig an verschiedenen Teilen des Projekts zu arbeiten, ohne sich gegenseitig zu
-          beeinträchtigen.
-        </li>
-        <li>
-          <span>Pull Requests:</span>Pull Requests: Wenn Entwickler:innen Änderungen in ein Repository
-          einbringen möchten, können sie einen sogenannten Pull Request (PR)
-          erstellen. Andere Entwickler können dann den vorgeschlagenen Code
-          überprüfen, Kommentare abgeben und die Änderungen genehmigen oder
-          ablehnen, bevor sie in den Hauptcode eingefügt werden.
-        </li>
-      </ol>
-    </section>
-
-    <footer>
-      <a href="./assets/html/about.html">Wie starte ich ein Projekt? </a>
-    </footer>
-
   </main>
 </body>
 

@@ -1,14 +1,74 @@
 html{
+    font-size: 62.5%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+:root{
+    --primary-color: rgb(6, 124, 179);
+    --secondary-color: rgb(255, 140, 0);
+    --primary-hover-color:  rgb(0, 0, 0);
+    --secondary-hover-color:  rgb(255, 255, 255);
+    --background-color: rgb(0, 0, 0);
+    --headline-fz: 3rem;
+    --primary-fz: 2rem;
+    --secondary-fz: 1.5rem;
+    --fweight: 900;
+}
+
+.active-link {
+    background-color: var(--background-color);
+    color: #fff;
+    font-weight: bold; 
+    border-radius: 50px;
+}
+
+.active-link:hover {
+    color: var(--secondary-hover-color);
+}
+
+h1, h2{
+    font-size: var(--headline-fz);
+    margin-right: 10px ;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: var(--primary-fz);
+}
+
+li{
+    font-size: var(--secondary-fz);
+}
+
+span {
+    font-weight: var(--fweight);
+    color: var(--secondary-color);
+}
+
+/* --------------------- Global Styl end ------------------- */
 
 main{
     margin: 30px 40px;
 }
+header {
+    margin: 5vh 5vw 2vh 5vw;
+    text-align: right; 
+}
 
-span {
-    font-weight: 900;
-    color: rgb(6, 124, 179);
+header a {
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block; 
+    color: darkorange;
+}
+
+header a:hover {
+    cursor: pointer;
+    color: var(--primary-hover-color);
 }
 
 .d-flex{
@@ -16,22 +76,16 @@ span {
     align-items: center;
 }
 
-.d-flex h1, h2{
-    margin-right: 10px ;
-}
-
 img{
-    width: 5%;
+    width: 10%;
 }
 
-footer {
-    margin: 10vh auto;
-    text-align: center; 
+.section-flex {
+    display: flex;
+    align-items: baseline;
 }
 
-footer a {
-    font-weight: 900;
-    text-decoration: none;
-    display: inline-block; 
-    color: darkorange;
+.section-flex article {
+   width: 50vw;
+   margin: 0 50px;
 }
