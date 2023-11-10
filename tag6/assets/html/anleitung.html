@@ -30,25 +30,25 @@
         <ol>
             <li>Repo erstellen</li>
             <li>Ordner/Projekt erstellen und in VS Code öffnen</li>
-            <li>Terminal öffnen in VS Code (Shortcut: <span>Command J</span>)</li>
+            <li>Terminal öffnen in VS Code (Shortcut: <code>Command J</code>)</li>
 
             <ul>
-                <li><span>git init</span> -> Initialisiert ein neues Git-Repository</li>
-                <li><span>git add .</span> -> Fügt alle Dateien zum Staging-Bereich hinzu (A = Added)</li>
-                <li><span>git commit -m 'first commit'</span> -> Erstellt einen Commit mit Kommentar</li>
-                <li><span>it branch -m main</span> -> Benennt den Hauptzweig in "main" um</li>
-                <li><span>git remote add origin 'url'</span> -> Verknüpft das lokale Repository mit dem
+                <li><code>git init</code> -> Initialisiert ein neues Git-Repository</li>
+                <li><code>git add .</code> -> Fügt alle Dateien zum Staging-Bereich hinzu (A = Added)</li>
+                <li><code>git commit -m 'first commit'</code> -> Erstellt einen Commit mit Kommentar</li>
+                <li><code>it branch -m main</code> -> Benennt den Hauptzweig in "main" um</li>
+                <li><code>git remote add origin 'url'</code> -> Verknüpft das lokale Repository mit dem
                     Remote-Repository
                 </li>
-                <li><span>git push -u origin main</span> -> Pusht den lokalen Hauptzweig zum Remote-Repository</li>
+                <li><code>git push -u origin main</code> -> Pusht den lokalen Hauptzweig zum Remote-Repository</li>
             </ul>
 
             <h3>für ein bestehendes Projekt</h3>
             <ul>
-                <li><span>git add .</span> -> Fügt alle Änderungen im Projekt zum Staging-Bereich hinzu</li>
-                <li><span>git add "assets/styl.css"</span> -> Fügt eine bestimmte Datei zum Staging-Bereich hinzu</li>
-                <li><span>it commit -m 'Kommentar...'</span> -> Erstellt einen Commit mit Kommentar</li>
-                <li><span>git push</span> -> Pusht die Änderungen zum Remote-Repository</li>
+                <li><code>git add .</code> -> Fügt alle Änderungen im Projekt zum Staging-Bereich hinzu</li>
+                <li><code>git add "assets/styl.css"</code> -> Fügt eine bestimmte Datei zum Staging-Bereich hinzu</li>
+                <li><code>it commit -m 'Kommentar...'</code> -> Erstellt einen Commit mit Kommentar</li>
+                <li><code>git push</code> -> Pusht die Änderungen zum Remote-Repository</li>
             </ul>
         </ol>
 
@@ -85,6 +85,15 @@
 
         <h3>Wenn ihr ein Projekt löschen bzw. ein Repo löschen wollt, WICHTIG! Der git-Ordner muss gelöscht werden ->
             Command + Shift + .</h3>
+
+        <h3>Der SSH Weg -> Voraussetzung ist, dass du einen SSH Key hast</h3>
+        <ol>
+            <li><code>git clone </code>"SSH Link" . -> ggf. mit "yes" bestätigen</li>
+            <li>Führe Änderungen durch und füge sie hinzu: <code>git add .</code></li>
+            <li>Committe die Änderungen: <code>git commit -m "Dein Commit-Nachricht"</code></li>
+            <li>Pushe die Änderungen zum Repository: <code>git push</code></li>
+        </ol>
+
     </main>
 </body>
 

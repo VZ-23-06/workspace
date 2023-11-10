@@ -12,7 +12,7 @@ html{
     --headline-fz: 3rem;
     --primary-fz: 2rem;
     --secondary-fz: 1.5rem;
-    --fweight: 900;
+    --fweight: 400;
 }
 
 .active-link {
@@ -48,7 +48,7 @@ li{
     color: var(--primary-color);
 }
 
-span {
+code, span {
     font-weight: var(--fweight);
     color: var(--secondary-color);
 }
@@ -77,6 +77,8 @@ header a:hover {
     color: var(--primary-hover-color);
 }
 
+/* -- header & logo */
+
 .d-flex{
     display: flex;
     align-items: center;
@@ -85,6 +87,8 @@ header a:hover {
 img{
     width: 10%;
 }
+
+/* -- articel im flex */
 
 .section-flex {
     display: flex;
