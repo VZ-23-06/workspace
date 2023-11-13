@@ -9,8 +9,18 @@
   height: 100vh;
   background-color: cadetblue;
   display: flex;
-  /* justify-content bezieht sich immer auf die Maix Axis */
+  /* justify-content bezieht sich immer auf die Main Axis */
+  justify-content: flex-start;
   justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: space-evenly;
+  /* align-items bezieht sich immer auf die Cross Axis */
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  /* flex-direction: column; */
 }
 
 .flex__selection div {
@@ -19,17 +29,21 @@
 }
 
 .flex__selection div:nth-of-type(1) {
+  order: 2;
   background-color: blue;
 }
 
 .flex__selection div:nth-of-type(2) {
+  order: 1;
   background-color: red;
 }
 
 .flex__selection div:nth-of-type(3) {
+  order: 4;
   background-color: rgb(9, 255, 0);
 }
 
 .flex__selection div:nth-of-type(4) {
+  order: 3;
   background-color: rgb(0, 217, 255);
 }
