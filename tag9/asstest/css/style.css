@@ -26,3 +26,45 @@ legend {
 section{
     margin: 20px 0;
 }
+
+/* ----------------- INPUT & RADIO -----------------*/
+
+label{
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+input{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.text, .nummer, .telefon, .mail, .login{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(8), section:nth-child(9){
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+/* ----------------- RANGE -----------------*/
+
+input[type="range"] {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 22rem;
+    /* appearance: none;
+    background-color: aquamarine; */
+}
+
+textarea{
+    background: url("../Kermit.jpg") center/contain no-repeat;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+
+}
