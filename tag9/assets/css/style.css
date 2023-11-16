@@ -28,9 +28,9 @@ section{
 }
 
 ::placeholder {
-    color: red;
-    opacity: 1; /* Firefox */
- }
+    color: rgb(123, 0, 255);
+    opacity: 1; 
+}
 
 /* ----------------- INPUT & RADIO -----------------*/
 
