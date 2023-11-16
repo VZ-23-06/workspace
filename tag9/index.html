@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asstest/css/style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Label & Input</legend>
+
+            <!-- ------- INPUT ------- -->
+            <section class="text">
+                <label for="text">Gib hier einen Text ein:</label>
+                <input type="text" id="" placeholder="Gib hier einen Text ein">
+            </section>
+
+            <section class="nummer">
+                <label for="nummer">Gib Eine Nummer ein:</label>
+                <input type="number" id="" placeholder="Eine Nummer">
+            </section>
+
+            <section class="telefon">
+                <label for="telefon">Gib Deine Nummer ein:</label>
+                <input type="tel" id="" disabled placeholder="Meine Telefonnummer">
+            </section>
+
+            <section class="mail">
+                <label for="mail">Meine Mail:</label>
+                <input type="email" id="" required placeholder="Email Adresse">
+            </section>
+
+            <section class="login">
+                <label for="passwort">Passwort:</label>
+                <input type="password" id="" placeholder="Min 8 Zeichen">
+            </section>
+
+            <hr>
+
+            <!-- ------- RADIO ------- -->
+
+            <section>
+                <div>
+                    <input type="radio" name="auswahl" id="radioJa" checked>
+                    <label for="radioJa">Ja</label>
+                </div>
+                <div>
+                    <input type="radio" name="auswahl" id="radioNein">
+                    <label for="radioNein">Nein</label>
+                </div>
+                <div>
+                    <input type="radio" name="auswahl" id="radioVielleicht">
+                    <label for="radioVielleicht">Vielleicht</label>
+                </div>
+            </section>
+
+            <!-- ------- CHECKBOX & SELECT ------- -->
+
+            <section>
+                <h2>Ich packe meinen Koffer ...</h2>
+                <div>
+                    <label for="chechboxHose">Hose</label>
+                    <input type="checkbox" name="" id="chechboxHose">
+                </div>
+                <div>
+                    <label for="chechboxShirt">Shirt</label>
+                    <input type="checkbox" name="" id="chechboxShirt">
+                </div>
+                <div>
+                    <label for="chechboxSchuhe">Schuhe</label>
+                    <input type="checkbox" name="" id="chechboxSchuhe">
+                </div>
+                <div>
+                    <label for="chechboxEssen">Essen</label>
+                    <input type="checkbox" name="" id="chechboxEssen">
+                </div>
+                <div>
+                    <label for="chechboxTrinken">Trinken</label>
+                    <input type="checkbox" name="" id="chechboxTrinken">
+                </div>
+                <section>
+                    <h2>Meine Reiseziele:</h2>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Wähle aus ..</option>
+                            <option value="HR">Kroatien</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="MG">Madagaskar</option>
+                            <option value="MX">Mexiko</option>
+                            <option value="BR">Brasilien</option>
+                        </select>
+                    </div>
+                </section>
+
+
+            </section>
+
+            <!-- ------- DATE ------- -->
+
+            <section>
+                <div>
+                    <label for="date">Datum:</label>
+                    <input type="date" name="" id="date">
+                </div>
+            </section>
+
+
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
