@@ -7,3 +7,22 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    margin: 5vh 10vw;
+}
+
+fieldset{
+    border: 1px solid #000000;
+    background-color: rgba(62, 153, 185, 0.142);
+    padding: 20px 30px ;
+    max-width: 550px;
+}
+legend {
+    font-size: 3rem;
+    padding: 0 5px;
+}
+
+section{
+    margin: 20px 0;
+}
