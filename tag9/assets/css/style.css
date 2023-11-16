@@ -27,16 +27,12 @@ section{
     margin: 20px 0;
 }
 
-::placeholder {
-    color: rgb(123, 0, 255);
-    opacity: 1; 
-}
 
-/* ----------------- INPUT & RADIO -----------------*/
+/* --------------- INPUT & RADIO --------------- */
 
 label{
     font-size: 1.5rem;
-    margin-right: 20px;
+    margin-right:20px ;
 }
 
 input{
@@ -56,24 +52,53 @@ section:nth-child(8), section:nth-child(9){
     padding: 10px;
 }
 
-/* ----------------- RANGE -----------------*/
+/* --------------- CHECKBOX & SELECT --------------- */
+
+
+h2{
+    margin-bottom: 5px;
+}
+
+/* --------------- RANGE --------------- */
+
 
 input[type="range"] {
     margin-top: 10px;
+    
     cursor: pointer;
     width: 22rem;
-    /* appearance: none;
-    background-color: aquamarine; */
+    
+    /* appearance: none;  
+    background-color: #a3cddb;
+    */
+    /* ? deaktiviert die standardmäßigen Benutzeroberflächen-Stile des Browsers */
 }
+
 
 /* --------------- TEXTAREA & FILE --------------- */
 
 textarea{
-    background: url("../Kermit.jpg") center/contain no-repeat;
+    background: url("../Kermit.jpg") center no-repeat;
+    background-size: contain;
     background-color: white;
     width: 100%;
     padding: 5px;
 }
 
+
 /* --------------- SUBMIT / BUTTON --------------- */
 
+
+
+input[type="submit"] {
+    border: none;
+    padding: 1rem 3rem;
+    background: deeppink;
+    color: white;
+}
+input[type="button"] {
+    border: none;
+    padding: 1rem 3rem;
+    background: deeppink;
+    color: white;
+}
