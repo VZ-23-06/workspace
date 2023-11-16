@@ -27,6 +27,11 @@ section{
     margin: 20px 0;
 }
 
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+ }
+
 /* ----------------- INPUT & RADIO -----------------*/
 
 label{
@@ -61,10 +66,14 @@ input[type="range"] {
     background-color: aquamarine; */
 }
 
+/* --------------- TEXTAREA & FILE --------------- */
+
 textarea{
     background: url("../Kermit.jpg") center/contain no-repeat;
     background-color: white;
     width: 100%;
     padding: 5px;
-
 }
+
+/* --------------- SUBMIT / BUTTON --------------- */
+
