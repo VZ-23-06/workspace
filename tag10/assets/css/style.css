@@ -70,9 +70,61 @@ a {
 }
   
 
+/* ----------- HERO SECTION ----------- */
 
+.hero__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color:  rgb(20, 25, 65);
+}
+
+.hero__section div {
+    width: 50vw;
+    padding: 30px;
+    color: rgb(141, 151, 155);
+}
+
+.hero__section img {
+    width: 100%
+}
+
+.mobile__image{
+    display: none;
+}
   
-  
+
+/* ! Media Queries */
+/* ? Handy ab 576px */
+/* ? Tablet ab 768px */
+/* ? Desktop ab 992px */
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 5rem;
+        color: deeppink;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .hero__section{
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+    .hero__section div{
+        width: auto; 
+    }
+    .hero__section .image{
+        display: none;
+    }
+    .hero__section .mobile__image{
+        display: block;
+        max-width: 100%;
+    }
+    
+
+}
   
   
   
