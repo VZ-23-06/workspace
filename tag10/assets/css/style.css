@@ -95,6 +95,23 @@ a {
 }
 
 
+/* ------------------ Burger Menü ------------------ */
+.burger__wrapper{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+
+.burger{
+    height: 5px;
+    width: 30px;
+    background-color: rgb(102, 0, 97);
+    margin: 2px;
+    border-radius: 10px;
+}
+
+
 /* ------------------ BOX SECTION ------------------ */
 
 .box article{
@@ -120,11 +137,21 @@ a {
 /* ? Desktop ab 992px */
 
 /* # DESKTOP -> Handy max-width, um das Layout anzupassen, wenn der Bildschirm kleiner wird */
+/* # HANDY -> DESKTOP  Verwende min-width, um das Layout anzupassen, wenn der Bildschirm größer wird */
+
 
 /* * das @media ist ein Schlüssel, dein ein Media Querie in css einbettet. */
 /* * das Wort "only" wird verwendet, um ältere Browser auszuschließen, die die Media Queries nicht korrekt interpritieren können.  */
 
-@media only screen and (max-width: 768px){
+/* 
+* Desktop-First: Wenn du zuerst für Desktop-Bildschirme gestaltest, beginnst du ohne Media Queries. 
+* Wenn es notwendig wird, das Design für kleinere Bildschirme, wie unterhalb von 1280 Pixeln, anzupassen, verwendest du max-width Media Queries. 
+* Hier passt du das Layout so an, dass es sich "nach unten" für kleinere Geräte skaliert.
+*/
+
+
+
+@media only screen and (max-width: 576px){ /* * bis 576px */
     h1{
         font-size: 5rem;
         color: deeppink;
@@ -147,21 +174,38 @@ a {
         max-width: 100%;
     }
 
-    .box{
-        display: flex;
-    }
+    /* # Burger Menü */
 
-    .box article p {
+    header .burger__wrapper{
+        display: block;
+    }
+    header nav {
         display: none;
     }
 
+    /* # box section */
+
+    .box{
+        display: flex;
+    }
+    .box article p {
+        display: none;
+    }
     .color{
         width: 80vw;
         height: 100vh;
-        
     }
-    
 }
   
-  
-  
+
+ /* 
+* Mobile-First: Wenn du mit der Gestaltung deiner Webseite beginnst, startest du ohne Media Queries. 
+* Sobald du Anpassungen für größere Bildschirme, wie Tablets ab einer Breite von 414 Pixeln, benötigst, fügst du min-width Media Queries hinzu. 
+* Du passt das Layout so an, dass es sich "nach oben" für größere Geräte skaliert. 
+*/
+
+@media only screen and (min-width: 414px) { 
+    .hero__section {
+        background-color: rgb(66, 60, 179);
+    }
+}
