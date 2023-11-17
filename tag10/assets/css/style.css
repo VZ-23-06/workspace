@@ -93,12 +93,36 @@ a {
 .mobile__image{
     display: none;
 }
+
+
+/* ------------------ BOX SECTION ------------------ */
+
+.box article{
+    margin: 20px;
+    text-align: justify;
+    background-color: deeppink;
+    padding: 30px;
+    max-width: 100vw;
+}
+
+.color{
+    height: 30vh;
+    margin: 20px;
+    background-color: aqua;
+}
+
   
+/* ------------------ MEDIA QUERIES ------------------ */
 
 /* ! Media Queries */
 /* ? Handy ab 576px */
 /* ? Tablet ab 768px */
 /* ? Desktop ab 992px */
+
+/* # DESKTOP -> Handy max-width, um das Layout anzupassen, wenn der Bildschirm kleiner wird */
+
+/* * das @media ist ein Schlüssel, dein ein Media Querie in css einbettet. */
+/* * das Wort "only" wird verwendet, um ältere Browser auszuschließen, die die Media Queries nicht korrekt interpritieren können.  */
 
 @media only screen and (max-width: 768px){
     h1{
@@ -122,8 +146,21 @@ a {
         display: block;
         max-width: 100%;
     }
-    
 
+    .box{
+        display: flex;
+    }
+
+    .box article p {
+        display: none;
+    }
+
+    .color{
+        width: 80vw;
+        height: 100vh;
+        
+    }
+    
 }
   
   
