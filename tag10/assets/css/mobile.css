@@ -1,9 +1,9 @@
 /* 
-* Diese Media Query stellt sicher, dass das Layout der Webseite erst für Geräte mit einer Bildschirmbreite von (ab) 414 Pixeln oder mehr angepasst wird. 
+* Diese Media Query stellt sicher, dass das Layout der Webseite erst für Geräte mit einer Bildschirmbreite ab 576px oder mehr angepasst wird. 
 * Die Stile innerhalb dieser Query werden nur aktiv, wenn die Bildschirmbreite mindestens 414 Pixel beträgt.
 */
 
-@media only screen and (min-width: 414px) { /* * ab 414px */
+@media only screen and (min-width: 576px) { /* * ab 576px */
     .hero__section {
         background-color: rgb(66, 60, 179);
     }

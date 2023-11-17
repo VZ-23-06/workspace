@@ -131,10 +131,19 @@ a {
   
 /* ------------------ MEDIA QUERIES ------------------ */
 
-/* ! Media Queries */
-/* ? Handy ab 576px */
-/* ? Tablet ab 768px */
-/* ? Desktop ab 992px */
+/* 
+! Media Queries für Desktop-First-Ansatz:
+! - Tablet: Anwenden von Stilen für Bildschirme bis zu einer Maximalbreite von 767px.
+! - Handy: Anwenden von Stilen für Bildschirme bis zu einer Maximalbreite von 576px.
+*/
+
+/* 
+! Media Queries für Mobile-First-Ansatz:
+! - Tablet: Anwenden von Stilen für Bildschirme ab einer Mindestbreite von 768px.
+! - Desktop: Anwenden von Stilen für Bildschirme ab einer Mindestbreite von 992px.
+*/
+
+
 
 /* # DESKTOP -> Handy max-width, um das Layout anzupassen, wenn der Bildschirm kleiner wird */
 /* # HANDY -> DESKTOP  Verwende min-width, um das Layout anzupassen, wenn der Bildschirm größer wird */
@@ -200,11 +209,11 @@ a {
 
  /* 
 * Mobile-First: Wenn du mit der Gestaltung deiner Webseite beginnst, startest du ohne Media Queries. 
-* Sobald du Anpassungen für größere Bildschirme, wie Tablets ab einer Breite von 414 Pixeln, benötigst, fügst du min-width Media Queries hinzu. 
+* Sobald du Anpassungen für größere Bildschirme, wie Tablets ab einer Breite von 576 Pixeln, benötigst, fügst du min-width Media Queries hinzu. 
 * Du passt das Layout so an, dass es sich "nach oben" für größere Geräte skaliert. 
 */
 
-@media only screen and (min-width: 414px) { 
+@media only screen and (min-width: 576px) { 
     .hero__section {
         background-color: rgb(66, 60, 179);
     }
