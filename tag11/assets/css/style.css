@@ -63,38 +63,71 @@ grid-column-end: 3; */
 } */
 
 .box1 {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    background-color: aquamarine;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: aquamarine;
 }
 
 .box2 {
-    grid-column: 1 / 3;
-    grid-row: 2 / 4;
-    background-color: red;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  background-color: red;
 }
 
 .box3 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
-    background-color: brown;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  background-color: brown;
 }
 
 .box4 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    background-color: beige;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  background-color: beige;
 }
 
 .box5 {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    background-color: pink;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  background-color: pink;
 }
 
 .box6 {
-grid-column: 3 / 4;
-grid-row: 4 / 5;
-background-color: violet;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  background-color: violet;
 }
 
+/* ! Display Grid mit template-area */
+
+article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+}
+
+
+.container1 {
+    background-color: green;
+    grid-area: Batman;
+}
+
+.container2 {
+    background-color: blue;
+    grid-area: Aquaman;
+}
+
+.container3 {
+    background-color: red;
+    grid-area: Redpool;
+}
+
+.container4 {
+    background-color: black;
+    grid-area: Superman;
+}
+
+.container5 {
+    background-color: chocolate;
+    grid-area: Ironman;
+}
