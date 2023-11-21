@@ -102,32 +102,52 @@ grid-column-end: 3; */
 
 article {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(4, 100px);
+  grid-template-areas:
+    "Batman Batman Aquaman Aquaman"
+    "Batman Batman Ironman Hulk"
+    "Superman Thor Ironman Hulk"
+    "Superwoman . Ironman Redpool";
+    gap: 10px;
 }
 
-
 .container1 {
-    background-color: green;
-    grid-area: Batman;
+  background-color: green;
+  grid-area: Batman;
 }
 
 .container2 {
-    background-color: blue;
-    grid-area: Aquaman;
+  background-color: blue;
+  grid-area: Aquaman;
 }
 
 .container3 {
-    background-color: red;
-    grid-area: Redpool;
+  background-color: red;
+  grid-area: Redpool;
 }
 
 .container4 {
-    background-color: black;
-    grid-area: Superman;
+  background-color: black;
+  grid-area: Superman;
 }
 
 .container5 {
-    background-color: chocolate;
-    grid-area: Ironman;
+  background-color: chocolate;
+  grid-area: Ironman;
+}
+
+.container6 {
+  background-color: yellow;
+  grid-area: Hulk;
+}
+
+.container7 {
+  background-color: aquamarine;
+  grid-area: Thor;
+}
+
+.container8 {
+  background-color: deeppink;
+  grid-area: Superwoman;
 }
