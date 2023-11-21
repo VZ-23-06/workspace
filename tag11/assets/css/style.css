@@ -100,7 +100,7 @@ grid-column-end: 3; */
 
 /* ! Display Grid mit template-area */
 
-article {
+/* article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(4, 100px);
@@ -150,4 +150,34 @@ article {
 .container8 {
   background-color: deeppink;
   grid-area: Superwoman;
+} */
+
+body {
+  display: grid;
+  grid-template-columns: 90vw 10vw;
+  grid-template-rows: 50px 80vh 20vh;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+header {
+  background-color: peru;
+  grid-area: header;
+}
+
+main {
+  background-color: blue;
+  grid-area: main;
+}
+
+aside {
+  background-color: brown;
+  grid-area: aside;
+}
+
+footer {
+  background-color: blueviolet;
+  grid-area: footer;
 }
