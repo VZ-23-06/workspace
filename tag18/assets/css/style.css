@@ -22,19 +22,50 @@ main {
   transition-timing-function: ease-in; */
 }
 
+/* 
+    ! Mit Transition kann ich bestimmen was, wielange und mit welche verzögerung animiert werden soll
+    ? - all = Animiert alles
+    ? - background-color = nur den hintergrund
+    ? - color = nur die text color
+    ? - etc.
+    */
+
+/* Erste wert, was soll animiert werden */
+/* Zweiter wert, wielange soll das dauern */
+/* Dritter wert, wielange soll es verzögert sein */
+/* Vierter wert, wie soll die animation ablaufen */
+/* https://cubic-bezier.com/ */
+
+/* ! Transform */
+
 .transform div:hover {
   color: blue;
   background-color: green;
-  /* transform: translateX(-50px);
+
+  /* ? Verschiebt das Element nach Rechts / Links (-50px) geht auch*/
+  transform: translateX(-50px);
+
+  /* ? Verschiebt das Element nach Oben / Unten*/
   transform: translateY(-100px);
-  transform: translate(100px, 200px); */
+
+  /* ? Verschiebt das Element in X und Y achse. (erse wert ist x achse) */
+  transform: translate(100px, 200px);
+
+  /* ?  animiert die rotation um die eigene achse*/
   transform: rotate(-90deg);
 
+  /* ?  animiert die breite (2 heißt es wird 2x so breit)*/
   transform: scaleX(2);
+  /* ? animiert die höhe  */
   transform: scaleY(4);
+
+  /* ? animiert die höhe und breite  */
   transform: scale(6);
 
-  /* transform: skew(50deg, 30deg); */
+  /* ? animiert die höhe und breite (ecken)  */
+  transform: skew(50deg, 30deg);
+
+  /* Mehrer als Shorthand */
   transform: rotate(110deg) translate(50px, 100px);
 }
 
@@ -58,6 +89,17 @@ main {
   animation: move 5s linear 0.3s infinite reverse;
 }
 
+/* 
+  ? Mit animation rufe ich den namen der Animation (Keyframes) auf
+  ? move = name der Animation
+  ? 5s = wielange die animation dauern soll
+  ? linear = wie soll die animation laufen
+  ? infinite = wieoft soll die anaimation abgespielt werden (man kann auch zahlen eingeben)
+  ? normal = Animationsrichtung
+           ? -> alternate: geht wieder zurück wie die animation gekommen ist
+           ? -> forwards: die animation bleibt am endpunkt stehen wo das keyframes aufhört
+  */
+
 @keyframes move {
   0% {
     background-color: green;
@@ -76,4 +118,104 @@ main {
   }
 }
 
+@keyframes loader {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+    background-color: red;
+    border-radius: 0;
+  }
+  66% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
+.loader__section {
+  display: flex;
+  gap: 10px;
+}
+
+.loader__section div {
+  background-color: gold;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.loader__section div:nth-of-type(1) {
+  animation: loader 3s infinite ease-in-out;
+}
+
+.loader__section div:nth-of-type(2) {
+  animation: loader 3s 0.3s infinite ease-in-out;
+}
+
+.loader__section div:nth-of-type(3) {
+  animation: loader 3s 0.4s infinite ease-in-out;
+}
+
+.loader__section div:nth-of-type(4) {
+  animation: loader 3s 0.5s infinite ease-in-out;
+}
+
+.last__section {
+  height: 100vh;
+}
+
+.last__section div {
+  margin-top: 200px;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  transition: all 1s 0.2s ease-in-out;
+}
+
+.last__section div:hover {
+  transform: translateY(200px);
+  transform: translateX(200px);
+  transform: rotate(-90deg);
+  background-color: green;
+  transform: scale(5);
+  transform: translateX(200px) scale(2);
+}
+
+.last__animation {
+  height: 600px;
+  width: 600px;
+  background-color: green;
+}
+
+.last__animation div {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  animation: kreis 5s 0.3s infinite forwards;
+}
+
+.last__animation div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes kreis {
+  0% {
+    transform: translate(0);
+  }
+  33% {
+    transform: translateX(550px);
+    background-color: blue;
+  }
+  66% {
+    transform: translateY(550px);
+  }
+  100% {
+    transform: translate(0);
+    background-color: red;
+  }
+}
