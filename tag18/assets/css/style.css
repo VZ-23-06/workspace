@@ -15,7 +15,7 @@ main {
   align-items: center;
   color: white;
   transition: all 1s 0.1s ease-out;
-  
+  transform-origin: 0% 0%;
   /* transition-property: all;
   transition-duration: 1s;
   transition-delay: 0.1s;
@@ -25,4 +25,55 @@ main {
 .transform div:hover {
   color: blue;
   background-color: green;
+  /* transform: translateX(-50px);
+  transform: translateY(-100px);
+  transform: translate(100px, 200px); */
+  transform: rotate(-90deg);
+
+  transform: scaleX(2);
+  transform: scaleY(4);
+  transform: scale(6);
+
+  /* transform: skew(50deg, 30deg); */
+  transform: rotate(110deg) translate(50px, 100px);
 }
+
+.animation {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+}
+
+.animation div {
+  height: 50%;
+  width: 50%;
+  background-color: purple;
+
+  /* animation-name: move;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation: move 5s linear 0.3s infinite reverse;
+}
+
+@keyframes move {
+  0% {
+    background-color: green;
+  }
+  33% {
+    background-color: pink;
+    transform: translateY(100%);
+  }
+  66% {
+    background-color: brown;
+    transform: translate(100%, 100%);
+  }
+  100% {
+    background-color: blue;
+    transform: translateX(100%);
+  }
+}
+
+
