@@ -21,7 +21,7 @@ Diese Map-Datei enthält Informationen, die den Browsern helfen, den kompilierte
       - main.scss
       
 
-* Warum beginnt man mit einem "_" ?
+# Warum beginnt man mit einem "_" ?
 -  Die Namenskonvention mit einem vorangestellten Unterstrich (_variables.scss) deutet oft darauf hin, dass es sich um eine Teildatei handelt, die in eine Haupt-SCSS-Datei (main.scss) importiert wird.
 
 - Die Datei wird normalerweise als Teil einer partiellen Dateistruktur betrachtet, was bedeutet, dass sie mit einem führenden Unterstrich (_) beginnt. Sie wird nicht eigenständig kompiliert, sondern in andere Haupt-SCSS-Dateien importiert, um ihre Variablen zu nutzen.
