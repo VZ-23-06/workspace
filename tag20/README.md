@@ -11,7 +11,7 @@ Diese Map-Datei enthält Informationen, die den Browsern helfen, den kompilierte
 + brew install sass/sass/sass
 
 **wie die Ordner Struktur**: 
-## sass --watch assets/scss/main.scss assets/css/style.css
+# sass --watch assets/scss/main.scss assets/css/style.css
 
 - dein-projekt/
   - assets/
