@@ -7,7 +7,6 @@ SCSS ist im Grunde eine Erweiterung von SASS und folgt einer CSS-ähnlicheren Sy
 style.css.map -> ist eine sogenannte Source Map
 Diese Map-Datei enthält Informationen, die den Browsern helfen, den kompilierten CSS-Code auf die ursprünglichen SASS- oder SCSS-Dateien zurückzuführen.
 
-##
 ## Starte SASS
 + brew install sass/sass/sass
 
@@ -19,6 +18,7 @@ Diese Map-Datei enthält Informationen, die den Browsern helfen, den kompilierte
     - scss/
       - main.scss
       
+## 
 
 # Warum beginnt man mit einem "_" ?
 -  Die Namenskonvention mit einem vorangestellten Unterstrich (_variables.scss) deutet oft darauf hin, dass es sich um eine Teildatei handelt, die in eine Haupt-SCSS-Datei (main.scss) importiert wird.
@@ -26,10 +26,11 @@ Diese Map-Datei enthält Informationen, die den Browsern helfen, den kompilierte
 - Die Datei wird normalerweise als Teil einer partiellen Dateistruktur betrachtet, was bedeutet, dass sie mit einem führenden Unterstrich (_) beginnt. Sie wird nicht eigenständig kompiliert, sondern in andere Haupt-SCSS-Dateien importiert, um ihre Variablen zu nutzen.
 
 - die Verwendung von Teil- und Hauptdateien hilft, den Code zu organisieren und zu strukturieren, insbesondere in größeren Projekten, indem sie die Wiederverwendbarkeit von Code und die Lesbarkeit erhöhen.
+##
 
 # Syntax
-## SASS
+SASS
 - verwendet eine Einrückungsyntax ohne geschweifte Klammern und Semikolons, um die Struktur von Stylesheets zu definieren
 
-## SCSS (Sassy CSS) 
+SCSS (Sassy CSS) 
 - hingegen verwendet eine CSS-ähnliche Syntax mit geschweiften Klammern und Semikolons, was sie näher an herkömmlichem CSS macht.
