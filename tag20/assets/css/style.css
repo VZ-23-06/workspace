@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 
+In diesem Beispiel werden die Variablen $primary-color und $secondary-color, 
+die in _variables.scss definiert sind, in variables.scss importiert und in anderen Stilen im Projekt verwendet.
+*/
+/* ====== P Tag Style */
+/* verschiedenen Eigenschaften, die wir öfter verwenden wollen.
+    und eine "funktion", in der wir parameter übergeben wollen */
+/* ! nimt drei Argumente entgegen: $pizza, $color, $background
+    Diese Argumente werden verwendet, um den Stil für den text zu definieren. */
+/* ========== IMPORTS ========== */
+/* muss an erster Stelle stehen
+Das @use-Statement importiert das variables.scss-Modul und weist ihm den Alias "variables" zu. 
+Innerhalb deiner main.scss kannst du dann auf die Variablen dieses Moduls mit dem Alias zugreifen. 
+*/
+/* Importiere das Modul 'variables' und weise ihm den Alias 'variables' zu.
+Der Alias sollte logisch benannt werden, umdas Moduls leicht identifizieren zu können. */
+/* @import "mixin"; */
+@font-face {
+  font-family: "roboto";
+  src: url("../font/Roboto-Regular.ttf");
+}
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* NESTING */
+/* ========== HEADER STYLES ========== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+header h2 {
+  /*  margin: 10vh 0 0 0;
+   color: #8000ff; */
+  /* wenn wir @use verwenden */
+  margin: 10vh 0 0 0;
+  color: #8000ff;
+  font-size: 2rem;
+}
+header h3 {
+  color: #8000ff;
+}
+header p {
+  font-size: 1rem;
+  max-width: 50vw;
+  text-align: center;
+  margin: 2vh 0;
+}
+
+/* ========== MAIN STYLES ========== */
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: 5vh auto;
+}
+
+/* ========== IMAGE GALLERY ========== */
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.imageGallery figure {
+  width: 300px;
+}
+.imageGallery figure img {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.imageGallery figure figcaption h2 {
+  color: #8000ff;
+  margin: 2vh 0 0 0;
+}
+.imageGallery figure figcaption a button {
+  font-size: 1rem;
+  color: rgb(32, 235, 154);
+  background-color: white;
+  border: 3px solid rgb(32, 235, 154);
+  border-radius: 10px;
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.imageGallery figure figcaption a button:hover {
+  color: rgb(32, 235, 154);
+  background-color: #8000ff;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

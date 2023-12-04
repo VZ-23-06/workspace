@@ -1,0 +1,98 @@
+/* ========== IMPORTS ========== */
+
+/* muss an erster Stelle stehen
+Das @use-Statement importiert das variables.scss-Modul und weist ihm den Alias "variables" zu. 
+Innerhalb deiner main.scss kannst du dann auf die Variablen dieses Moduls mit dem Alias zugreifen. 
+*/
+@use 'variables' as variables; /* Importiere das Modul 'variables' und weise ihm den Alias 'variables' zu.
+Der Alias sollte logisch benannt werden, umdas Moduls leicht identifizieren zu können. */
+
+@use 'mixin' as mixins;
+
+/* @import "mixin"; */
+@import "font";
+
+
+/* ========== GLOBAL STYLES ========== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* NESTING */
+
+/* ========== HEADER STYLES ========== */
+
+header{
+    @include mixins.flex-center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    h2{
+       /*  margin: 10vh 0 0 0;
+        color: #8000ff; */
+
+        /* wenn wir @use verwenden */
+        margin: variables.$main-margin;
+        color: variables.$main-color;
+        font-size: variables.$main-h3Size;
+    }
+    h3{
+        color: variables.$main-color;
+    }
+    p{
+        font-size: variables.$default-font-size;
+        max-width: variables.$max-width;
+        text-align: variables.$text-align;
+        margin: variables.$default-margin;
+    }
+}
+
+/* ========== MAIN STYLES ========== */
+main{
+    padding: 30px;
+    max-width: 900px;
+    margin: 5vh auto;
+}
+
+/* ========== IMAGE GALLERY ========== */
+
+.imageGallery{
+    @include mixins.nameDesMixin;
+    figure{
+        width: 300px;
+        img{
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        figcaption{
+            h2{
+                color: #8000ff;
+                margin: variables.$main-btnMargin;
+            }
+            a{
+                button{
+                    @include mixins.textStyle(1rem, rgb(32, 235, 154), #ffff);
+                    border: 3px solid rgb(32, 235, 154);
+                    border-radius: 10px;
+                    width: 120px;
+                    height: 35px;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    &:hover{
+                        color: rgb(32, 235, 154);
+                        background-color: #8000ff;
+                        border: none;
+                        transition: 0.2s;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
