@@ -4,10 +4,11 @@ SCSS ist im Grunde eine Erweiterung von SASS und folgt einer CSS-ähnlicheren Sy
 
 **Beide Varianten werden dann in reguläres CSS kompiliert, das von Webbrowsern verstanden und interpretiert werden kann.**
 
-
 style.css.map -> ist eine sogenannte Source Map
 Diese Map-Datei enthält Informationen, die den Browsern helfen, den kompilierten CSS-Code auf die ursprünglichen SASS- oder SCSS-Dateien zurückzuführen.
 
+##
+## Starte SASS
 + brew install sass/sass/sass
 
 **wie die Ordner Struktur** --> sass --watch assets/scss/main.scss assets/css/style.css
