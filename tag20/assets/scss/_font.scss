@@ -1,8 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: "roboto";
     src: url("../font/Roboto-Regular.ttf");
-}
+} */
 
-$fontFamily: roboto;
+$font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace;
+
+/* $fontFamily: roboto; */
 
 
