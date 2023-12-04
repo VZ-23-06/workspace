@@ -4,13 +4,12 @@
 Das @use-Statement importiert das variables.scss-Modul und weist ihm den Alias "variables" zu. 
 Innerhalb deiner main.scss kannst du dann auf die Variablen dieses Moduls mit dem Alias zugreifen. 
 */
-@use 'variables' as variables; /* Importiere das Modul 'variables' und weise ihm den Alias 'variables' zu.
+@use '_variables' as variables; /* Importiere das Modul 'variables' und weise ihm den Alias 'variables' zu.
 Der Alias sollte logisch benannt werden, umdas Moduls leicht identifizieren zu können. */
 
-@use 'mixin' as mixins;
+@use '_mixin' as mixins;
 
-/* @import "mixin"; */
-@import "font";
+@use '_font' as fonts;
 
 
 /* ========== GLOBAL STYLES ========== */
@@ -18,9 +17,10 @@ Der Alias sollte logisch benannt werden, umdas Moduls leicht identifizieren zu k
 *{
     margin: 0;
     padding: 0;
-    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-    "Droid Sans Mono", monospace, monospace;
+    /* font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace; */
     font-weight: 900;
+    font-family: fonts.$fontFamily;
     text-decoration: none;
 }
 

@@ -8,6 +8,10 @@ die in _variables.scss definiert sind, in variables.scss importiert und in ander
     und eine "funktion", in der wir parameter übergeben wollen */
 /* ! nimt drei Argumente entgegen: $pizza, $color, $background
     Diese Argumente werden verwendet, um den Stil für den text zu definieren. */
+@font-face {
+  font-family: "roboto";
+  src: url("../font/Roboto-Regular.ttf");
+}
 /* ========== IMPORTS ========== */
 /* muss an erster Stelle stehen
 Das @use-Statement importiert das variables.scss-Modul und weist ihm den Alias "variables" zu. 
@@ -16,16 +20,15 @@ Innerhalb deiner main.scss kannst du dann auf die Variablen dieses Moduls mit de
 /* Importiere das Modul 'variables' und weise ihm den Alias 'variables' zu.
 Der Alias sollte logisch benannt werden, umdas Moduls leicht identifizieren zu können. */
 /* @import "mixin"; */
-@font-face {
-  font-family: "roboto";
-  src: url("../font/Roboto-Regular.ttf");
-}
+/* @import "font"; */
 /* ========== GLOBAL STYLES ========== */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  /* font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+  "Droid Sans Mono", monospace, monospace; */
   font-weight: 900;
+  font-family: roboto;
   text-decoration: none;
 }
 
