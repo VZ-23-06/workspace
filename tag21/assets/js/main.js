@@ -121,10 +121,98 @@ let MyFirstVariable;
 
 
 // ! ===== Case Sensitive =====
-
+console.log("===== Case Sensitive =====");
 // das sind zwei unterschiedliche Werte
 let a = 10;
 let A = 100;
 console.log({a});
 console.log({A});
 
+
+// ! ===== String Concatination =====
+console.log("===== String Concatination =====");
+
+const firstName = "Wade";
+const secondName = "Winston";
+const lastName = "Wilson";
+
+let state = "New York"
+// let leerzeichen = " "
+
+console.log("Ich bin " + firstName + " " + secondName + " " + lastName + " und ich lebe in " + state);
+console.log(`Ich bin ${firstName} ${secondName} ${lastName} und ich lebe in ${state}`);
+
+
+// ! ===== Arithmetische Operatoren =====
+console.log("===== Arithmetische Operatoren =====");
+
+let x = 5;
+let y = 3;
+let z = 15;
+
+// addieren
+console.log(x + y);
+// subtrahieren
+console.log(x - y);
+// dividieren
+console.log(x / y);
+// multiplizieren
+console.log(y * z);
+
+// Modulo % = Restwert
+
+console.log(15 % 5); // 0
+console.log(5 % 2); // 1
+console.log(15 % 4); // 3
+
+// - Increment
+// mit ++ wird + ein gerchnet
+
+let zahl1 = 2
+console.log({zahl1});
+zahl1++; // wird um 1
+zahl1++; // wird um 1 
+console.log({zahl1}); // gibt uns 4 aus
+
+// - Decrement
+// mit -- wird ein vonm vorherigen Wert abgezogen
+
+let zahl2 = 5;
+console.log({zahl2});
+zahl2--; // wird um 1 rediziert
+zahl2--; // wird um 1 rediziert
+console.log({zahl2}); // gibt uns 3 
+
+
+// ! ===== Output =====
+console.log("===== Output =====");
+
+// - document.write()
+// mit der write() Methode können wir Elemente in unserem HTML ausgeben - 
+// Obwohl sie in der Webentwicklung häufig verwendet wird, ist sie nicht direkt mit dem Document Object Model (DOM) verbunden. 
+// Stattdessen manipuliert sie den Inhalt des Dokuments, das vom Browser gerendert wird.
+
+// so wird ein Text ausgegeben
+document.write("Hallo Leute");
+
+// und so mit einem HTML-Tag
+document.write("<h2 class='test'>Ich bin eine Headline</h2>");
+
+// - window.alert()
+// Es öffnet sich ein Popup mit einer Benachrichtigung
+// window.alert(" WARNUNG!!!!! ")
+
+// ! ===== Input =====
+
+
+// - window.prompt()
+// Es öffnet sich ein Popup-Fenster, das den Benutzer zur Eingabe von Informationen auffordert.
+// let sayYourName = window.prompt("Wie heißt du?")
+// console.log(sayYourName);
+
+// - window.confirm()
+// window.confirm("Stimmen Sie den Cookies zu?");
+// * Es öffnet sich ein Popup mit einer Bestätigungsanfrage.
+// Wenn wir das Ganze in einer Variable speichen, bekommen wir in console.log() was der Nutzer ausgewählt hat.
+// let confirm = window.confirm(" Stimmen Sie den Cookies zu?") --> wir bekommen entweder ein true oder ein false Wert zurück.
+// console.log(confirm);
