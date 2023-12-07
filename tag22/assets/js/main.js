@@ -82,14 +82,55 @@ console.log(mainHeadline.innerHTML);
 // - querySelector()
 // mit ID
 const secondaryHeadline = document.querySelector("#secondary-headline")
-console.log(secondaryHeadline);
+console.log("secondaryHeadline", secondaryHeadline.innerHTML);
 
 
 // mit Class
 const secondaryHeadline2 = document.querySelector(".myHeadline")
-console.log(secondaryHeadline2);
+console.log("secondaryHeadline2", secondaryHeadline2);
+
 
 
 //  direkt mit Element
 
+const secondaryHeadline3 = document.querySelector("section h2")
 
+console.log(secondaryHeadline3)
+console.log(secondaryHeadline3.innerHTML);
+
+
+// - innerHtml
+
+mainHeadline.innerHTML = "ich bin der neue, hahahah"
+
+secondaryHeadline3.innerHTML = "moin"
+secondaryHeadline3.innerHTML += " Leute"
+
+mainHeadline.style.color = "red"
+mainHeadline.style.border = "1px solid red"
+mainHeadline.style.backgroundColor = "yellow"
+
+// * Unterschied zwsichen document.write() und .innerHTML
+
+let divContainer = document.querySelector("#div-container")
+
+divContainer.innerHTML = "<p>Ich bin ein p tag</p>"
+divContainer.innerHTML += "<p> Ich bin nochmal ein p tag </p>"
+
+
+document.write("<p> ich bin ein p tag vom document.write() <p/>")
+
+// # Funktion
+
+function sayHello() {
+    console.log("HELLO LEUTE")
+}
+
+
+sayHello()
+
+function log(firstName, LastName) {
+    console.log(`du bist eingeloggt ${firstName} ${LastName}`);
+}
+
+log("Magda", "Cale")
