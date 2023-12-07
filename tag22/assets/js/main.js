@@ -73,3 +73,16 @@ console.log("B" > "a");
 
 //  # Elemente Selektieren
 
+// - getElementById
+
+const mainHeadline = document.getElementById("main-headline")
+console.log(mainHeadline);
+console.log(mainHeadline.innerHTML);
+
+// - querySelector()
+
+const secondaryHeadline = document.querySelector("#secondary-headline")
+console.log(secondaryHeadline);
+
+const secondaryHeadline2 = document.querySelector(".myHeadline")
+console.log(secondaryHeadline2);
