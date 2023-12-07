@@ -80,9 +80,16 @@ console.log(mainHeadline);
 console.log(mainHeadline.innerHTML);
 
 // - querySelector()
-
+// mit ID
 const secondaryHeadline = document.querySelector("#secondary-headline")
 console.log(secondaryHeadline);
 
+
+// mit Class
 const secondaryHeadline2 = document.querySelector(".myHeadline")
 console.log(secondaryHeadline2);
+
+
+//  direkt mit Element
+
+
