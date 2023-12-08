@@ -125,11 +125,12 @@ mainHeadline.style.border = "1px solid red"
 //  Wie kann ich dem Element eine gelbe Hintergrundfarbe geben?
 mainHeadline.style.backgroundColor = "yellow"
 
-// * Unterschied zwsichen document.write() und .innerHTML
+//* Unterschied zwischen document.write() und .innerHTML
+// Mit document.write() fügen wir die Elemente immer am Ende des HTML Doms ein
+// Mit .innerHTML können wir gezielt Elemente ansprechen, deren Inhalte wir verändern wollen
+
 
 let divContainer = document.querySelector("#div-container")
-
-
 
 // Wir können innerHTML auch verwenden, um Inhalte zu überschreiben
 divContainer.innerHTML = "<p>Ich bin ein p tag</p>"
@@ -141,18 +142,38 @@ divContainer.innerHTML += "<p> Ich bin nochmal ein p tag </p>"
 document.write("<p> ich bin ein p tag vom document.write() <p/>")
 
 
-//* Unterschied zwischen document.write() und .innerHTML
-// Mit document.write() fügen wir die Elemente immer am Ende des HTML Doms ein
-// Mit .innerHTML können wir gezielt Elemente ansprechen, deren Inhalte wir verändern wollen
+
 
 // # Funktion
+
+// Deklarieren
+// Wir erstellen die Funktion und beschreiben, was die Funktion machen soll
+// mit dem Keyword "function" sagen wir JS, dass jetzt eine Funktion kommt
+// "sayHi" ist der Name der Funktion, der ist frei wählbar, sollte aber sinnig sein
+// () muss immer da sein
+
 
 function sayHello() {
     console.log("HELLO LEUTE")
 }
 
+// Aufrufen
+// Wir müssen eine Funktion aufrufen, damit sie ausgeführt wird
+// Wenn wir den Aufruf einfach in unsere JS Datei schreiben, wird die Funktion beim Aufruf der Seite ausgeführt
+// Später können wir Funktionen ausführen lassen, wenn beispielsweise auf einen Button geklickt wird
+
 
 sayHello()
+
+
+// # Funktionen mit Paramenter
+
+// ? Ein Parameter
+// Mit Parametern können wir unsere Funktionen viel flexibler und wiederverwendbar machen
+
+// Deklarieren
+// In den Klammern schreiben wir den Parameter und reichen ihn an die Funktion weiter
+// firstName ist quasie unser Platzhalter
 
 function log(firstName, LastName) {
     console.log(`du bist eingeloggt ${firstName} ${LastName}`);
