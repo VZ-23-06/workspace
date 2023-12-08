@@ -1,0 +1,80 @@
+html{
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+  "Droid Sans Mono", monospace, monospace;;
+}
+
+/* ! COUNTER */
+
+
+.couter{
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-div-container{
+  display: flex;
+  margin: 5px 10px;
+}
+
+button{
+  background-color: rgb(32, 235, 154);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.reset{
+  background-color: rgb(225, 32, 235);
+}
+
+
+/* ! LOGIN */
+
+.login {
+  background-color: #8000ff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 10vh auto;
+}
+
+.login label {
+  color: white;
+  display: block;
+}
+input[type="submit"]{
+  background-color: rgb(32, 235, 154);
+  border: none;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.green {
+  color: rgb(32, 235, 154);
+}
+
+.red {
+  background-color: rgb(32, 235, 154);
+  color: #8000ff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
