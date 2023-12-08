@@ -1,0 +1,56 @@
+body {
+  transition: 0.4s;
+}
+
+label {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav img {
+  height: 25px;
+  cursor: pointer;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: black;
+}
+
+.dark {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+
+.dark nav a {
+  color: white;
+}
+
+.big {
+  font-size: 40px;
+  color: red;
+}
+
+.remove {
+  font-size: 50px;
+  background-color: yellowgreen;
+}
+
+.myText {
+  font-size: 2rem;
+  color: pink;
+}
