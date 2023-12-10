@@ -3,6 +3,19 @@ html{
   "Droid Sans Mono", monospace, monospace;;
 }
 
+
+.ageCheck, 
+.color-container,
+.reich-sein {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5vh auto;
+  width: 200px;
+  text-align: center;
+}
+
+
 /* ! COUNTER */
 
 
@@ -67,11 +80,10 @@ input[type="submit"]{
   gap: 5px;
 }
 
-.green {
-  color: rgb(32, 235, 154);
-}
 
-.red {
+
+.password-message,
+.error-message {
   background-color: rgb(32, 235, 154);
   color: #8000ff;
   text-align: center;
