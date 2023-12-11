@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conditional Statments if else</title>
+  <title>Conditional Statements if else</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -26,6 +26,50 @@
 
     </div>
 
+  </section>
+
+  <!-- # =====Conditional Statements===== -->
+
+  <div class="reich-sein">
+    <label for="reichSein">Werde ich reich?</label>
+    <select name="" id="reich">
+      <option value="yes">🎃</option>
+      <option value="no">👺</option>
+    </select>
+    <button onclick="reichSein()">Klick!</button>
+    <p id="entscheidung"></p>
+  </div>
+
+  <!-- <div class="ageCheck">
+    <div>
+      <input type="number" id="ageInput" placeholder="Gib dein Alter an">
+      <button onclick="checkAge()">Check Age</button>
+    </div>
+    <p id="message"></p>
+  </div> -->
+
+  <div class="ageCheck">
+    <div>
+      <input type="number" id="ageInput" placeholder="Gib dein Alter an">
+      <input type="checkbox" id="checked">
+      <button onclick="checkAge()">Check Age</button>
+    </div>
+    <p id="message"></p>
+  </div>
+
+
+  <section class="login">
+    <form onsubmit="checkUserData(); return false">
+      <label for="username">Username:</label>
+      <input type="text" id="username">
+
+      <label for="password">Password:</label>
+      <input type="text" id="password">
+
+      <input type="submit" value="login">
+      <div class="login-output"></div>
+
+    </form>
   </section>
 
 
