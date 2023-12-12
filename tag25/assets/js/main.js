@@ -104,11 +104,11 @@ function getFruit() {
 
 
 function getDay() {
-    
+
     let day = document.querySelector("#day").value
     console.log(day);
 
-    day ? console.log("Es ist Wochentag") : console.log("Es ist Wochenende huhuh");
+    day === "Montag" ? console.log("Es ist Wochentag") : console.log("Es ist Wochenende huhuh");
 
 
     // switch (day) {
@@ -188,7 +188,6 @@ if (age > 19) {
 } else {
     console.log("du darfst shisha nicht rauchen");
 }
-
 
 
 
