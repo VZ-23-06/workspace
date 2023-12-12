@@ -81,6 +81,7 @@ switch (zahl) {
 
 
 function getFruit() {
+    // let fruit = "melone"
     let fruit = document.querySelector("#fruit").value
     let result = document.querySelector(".result")
     console.log(fruit);
@@ -100,7 +101,94 @@ function getFruit() {
     }
 }
 
-// let fruit = "melone"
+
+
+function getDay() {
+    
+    let day = document.querySelector("#day").value
+    console.log(day);
+
+    day ? console.log("Es ist Wochentag") : console.log("Es ist Wochenende huhuh");
+
+
+    // switch (day) {
+    //     case "Montag":
+    //     case "Dienstag":
+    //     case "Mittwoch":
+    //     case "Donnerstag":
+    //     case "Freitag":
+    //         console.log("Es ist Wochentag");
+    //         break;
+    //     case "Samstag":
+    //     case "Sonntag":
+    //         console.log("Es ist Wochenende huhuh");
+    //         break;
+    //     default:
+    //         console.log("Das ist ein gültiger Wert");
+    //         break;
+    // }
+
+}
+
+
+let num = 50;
+
+switch (true) {
+    case num > 50:
+        console.log("Die Zahl ist größer als 50");
+        break;
+    case num < 50:
+        console.log("Die Zahl ist kleiner als 50");
+        break;
+    default:
+        console.log("Die Zahl ist 50");
+        break;
+}
+
+
+
+
+
+// # Ternary Operator
+
+
+
+hungry = false
+    ? console.log("ja, ich hab hunger") // true
+    : console.log("Nein, ich hab kienen Hunger"); // false
+
+
+
+let zahl2 = 6;
+
+let ergebis =
+    zahl2 > 5
+        ? "Ja, das ist größer als 5" //true
+        : "Nein, das ist kleiner als 5" // false
+
+
+console.log(ergebis);
+
+
+
+const durst = true ? console.log("nein danke") : console.log("ja ich hab durst");
+
+
+
+const age = 20;
+
+
+
+age > 19 ? console.log("du darfst shisha rauchen") : console.log("du darfst shisha nicht rauchen");
+
+
+
+if (age > 19) {
+    console.log("du darfst shisha rauchen")
+} else {
+    console.log("du darfst shisha nicht rauchen");
+}
+
 
 
 
