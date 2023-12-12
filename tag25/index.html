@@ -11,7 +11,7 @@
 <body>
     <!-- wdh -->
     <section class="wdl">
-        <button onclick="toggleStyle() " class="toggle">Änder mich</button>
+        <button onclick="toggleStyle()">Änder mich</button>
 
         <article>
             <div class="ifoutput"></div>
@@ -19,6 +19,14 @@
         </article>
     </section>
 
+    <section>
+        <form onsubmit="getFruit(); return false">
+            <label for="fruit">Fruit</label>
+            <input type="text" name="fruit" id="fruit">
+            <p class="result"></p>
+            <input type="submit">
+        </form>
+    </section>
 
     <script src="./assets/js/main.js"></script>
 </body>
