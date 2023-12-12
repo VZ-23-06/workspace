@@ -191,3 +191,171 @@ if (age > 19) {
 
 
 
+
+
+// # String Methoden
+// index    012345678910111213141516171819                                                       32-10
+const ourString = "Hallo Leute, heute ist ein schöner Tag, heute werden wir string methoden lernen"
+
+// index start ist immer bei 0. H ist also index 0
+
+
+
+// * concat()
+// Verbindet zwei Strings
+
+let moretext = "ich bin sogar mehr texte"
+
+console.log(ourString.concat(" ich bin noch mehr texte"));
+console.log(ourString.concat(" " + moretext));
+
+
+// charAt()
+// liefert die uns das jeweiligen Zeichen zurück, das sich in einer Zeichenkette befindet
+
+console.log(ourString.charAt(3)); // l => index 3 bei dem text 
+
+// includes()
+console.log(ourString.includes("hallo")); // false
+console.log(ourString.includes("Tag")); // true
+
+// indexOf()
+// Sucht ab welchem index das i das erste mal kommt
+console.log(ourString.indexOf("i"));
+console.log(ourString.indexOf("H"));
+
+// lenght
+// gibt uns die länge vom String zurrück
+console.log(ourString.length);
+
+
+// replace()
+// ersetz ein Teil von einem String und gibt diesen zurrück
+
+console.log(ourString.replace("Tag", "Abend"));
+console.log(ourString.replace("Hallo", "Guten Morgen"));
+
+
+//  replaceAll()
+console.log(ourString.replaceAll("heute", "abend"));
+
+
+// slice()
+// scheneide bis index 2 alle zeichen weg und gib der uns den rest zurrück
+console.log(ourString.slice(2));
+// console.log(ourString.slice(2, 39));
+// schneide uns index 0 bis 6 aus dem String aus
+// console.log(ourString.slice(0, 6));
+
+
+// substing()
+console.log(ourString.substring(2));
+console.log(ourString.substring(0, 6));
+
+
+// substring vs slice
+// mit slice kann ich mit minuswerten arbeiten, er fängt von hinten an
+
+console.log(ourString.slice(-1)); // das funktioniert
+console.log(ourString.substring(-3)); // das geht nicht
+
+
+// toLowerCace()
+// gibt alles in kleinbuchtaben zurrück
+console.log(ourString.toLowerCase());
+
+// toUpperCase()
+// gibt alles in Großbuchtaben zurrück
+
+console.log(ourString.toUpperCase());
+
+let zahl3 = 100;
+console.log(zahl3);
+console.log(String(zahl3));
+
+
+
+
+
+
+
+// wiederholung
+
+let someText = "warum sind wir heute alle so toll ? :D "
+const someMoreText = "wir werden heute js weiterlernen"
+
+
+
+console.log(someText.indexOf("a")); // index 1
+console.log(someText.includes("toll")); // true
+
+console.log(someText.length); // 33
+
+
+
+console.log(someText.replace("toll", "großartig"));
+console.log(someText.replaceAll("heute", "am Vormittag"));
+
+
+console.log(someText.slice(15, 20));
+
+console.log(someText.concat(someMoreText));
+
+
+console.log(someText.charAt(3));
+
+
+
+function getMonth() {
+    let month = Number(document.querySelector("#month").value)
+    console.log(month);
+    switch (month) {
+        case 1:
+            console.log("Januar");
+            break;
+        case 2:
+            console.log("Feb");
+            break;
+        case 3:
+            console.log("März");
+            break;
+        case 4:
+            console.log("April");
+            break;
+        case 5:
+            console.log("Mai");
+            break;
+
+        case 6:
+            console.log("Juni");
+            break;
+
+        case 7:
+            console.log("Juli");
+            break;
+
+        case 8:
+            console.log("Aug");
+            break;
+        case 9:
+            console.log("Sept");
+            break;
+
+        case 10:
+            console.log("Oktober");
+            break;
+
+        case 11:
+            console.log("Nov");
+            break;
+
+        case 12:
+            console.log("Dez");
+            break;
+        default:
+            console.log("Dein Wert ist ungültig");
+    }
+}
+
+
+
