@@ -99,20 +99,45 @@ console.log(kurzFunction())
 
 // # Scope
 // - Globaler Scope
-// - Glober Scope ist quesi unsere ganze JS Datei
+// Der global Scope ist quasi unsere komplette JS Datei
+// Wenn etwas im global Scope definiert ist, kann ich von überall darauf zugreifen
 
 
-const firstname = "Alex"
+// const firstName = "Alex"
 
+const greet = () => {
+    // console.log(`hallo ${firstName}`);
+}
 
-
+greet()
 
 // - Localer Scope
+// der Localer Scope kann nur innerhalb der functionskörper verwendet werden
 
 
 
 
 
+const greet2 = () => {
+    const firstName = "Sebastian"
+    // console.log(`hallo ${firstName}`);
+}
+greet2()
 
 
 
+let User = "Daniel"
+
+
+const login = () => {
+    console.log(`Du bist eingeloggt lieber ${User}`);
+    // console.log("follower", follower);
+}
+login()
+
+const searchFunc = () => {
+    const follower = "Magda"
+    console.log(`${User} hat ${follower} gefolgt`);
+}
+
+searchFunc()
