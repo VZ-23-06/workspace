@@ -67,3 +67,47 @@ console.log(team[team.length - 2]);
 
 let mitarbeiter = ["jimmy", "Johanna", "Christian", "Jannik", "Steffen"]
 console.log(mitarbeiter);
+
+// * pop()
+// Die pop() Methode entfernt das letze Element in einem Array und gibt den Wert, des gelöschtes Elements zurrück
+console.log("%c -------pop--------", "color: red")
+// Steffen
+let popMitarbeiter = mitarbeiter.pop()
+console.log(popMitarbeiter);
+
+console.log(mitarbeiter);
+
+console.log("%c -------shift--------", "color: red")
+// * shift()
+// die Shift() Methode entfernt das erste Element in einem Array und gibt den Wert, des gelöschtes Elements zurrück
+let shiftMitarbeiter = mitarbeiter.shift()
+console.log(shiftMitarbeiter);
+
+console.log(mitarbeiter);
+
+
+console.log("%c -------push--------", "color: red")
+// * push()
+
+// die push() Methode  fügt an der letzen Stelle ein Element hinzu und gibt uns die neue länge von dem Array zurrück
+
+let pushMitarbeiter = mitarbeiter.push("Lisa")
+console.log(pushMitarbeiter);
+console.log(mitarbeiter);
+
+
+// const einStellen = () => {
+//     let neueMitarbeiter = document.querySelector("#neueMitarbeiter").value
+//     mitarbeiter.push(neueMitarbeiter)
+// }
+
+console.log("%c -------unshift--------", "color: red")
+// * unshift()
+// die unshift() Methode fügt an der erste Stelle ein Element hinzu und gibt uns die neue länge von dem Array zurrück
+
+let unshiftMitarbeiter = mitarbeiter.unshift("Timo")
+console.log(unshiftMitarbeiter);
+console.log(mitarbeiter);
+
+
+
