@@ -109,5 +109,83 @@ let unshiftMitarbeiter = mitarbeiter.unshift("Timo")
 console.log(unshiftMitarbeiter);
 console.log(mitarbeiter);
 
+console.log("%c -------join--------", "color: red")
+
+// * join()
+// Mit join() können wir ein Array zu einem String umwandeln
+
+let heros = ["Batman", "TheJoker", "Ironman", "Thor", "ProfessorX"]
+
+console.log(heros);
+
+console.log(heros.join(" "));
+
+const ul = document.querySelector("ul")
+ul.innerHTML = "<li>" + heros.join("</li><li>") + "</li>"
 
 
+console.log("%c -------filter--------", "color: red")
+// * filter
+
+const numbers = [1, 2, 3, 4, 5, "2345"]
+
+const evenNumber = numbers.filter(num => num % 2 === 0);
+console.log(evenNumber);
+// callback function
+const batman = heros.filter((el) => {
+    el === "Superman"
+})
+
+console.log(batman);
+
+
+
+const getSpieler = () => {
+    const spieler = document.querySelector("#spieler").value
+    const result = heros.filter(charater => charater === spieler).join(" ")
+    if (result) {
+        console.log(result);
+    } else {
+        console.log("der Spieler wurde gefunden");
+    }
+}
+
+console.log(heros);
+
+
+// Wiederholung
+
+// push
+const fruits = ["Apfel", "Banana", "Orange"]
+
+console.log(fruits);
+
+fruits.push("Kiwi", "Wassermelone")
+
+console.log(fruits);
+
+// unshift()
+fruits.unshift("Traube")
+
+console.log(fruits);
+
+
+const fruits2 = ["Wassermelone", "Kirsche", "Aprikosen", "Mandarine"]
+console.log(fruits2);
+// pop()
+
+fruits2.pop()
+
+console.log(fruits2);
+
+// shift()
+fruits2.shift()
+
+console.log(fruits2);
+
+
+
+
+const newArr = ["Farhad", "Magda", 3245, true, ["Wassermelone", "Orange"]]
+
+console.log(newArr);
