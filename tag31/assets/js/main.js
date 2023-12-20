@@ -237,3 +237,37 @@ const result = userNameToArray.map((word) => {
 
 // console.log(result);
 
+let numArr = [23, 1, 5, 67, 8]
+numArr.sort(function (a, b) {
+    return a - b
+})
+
+console.log(numArr);
+
+// 1,2,3,5,6,7,8
+
+// const newString = numArr.join("")
+// console.log(newString);
+// const stringArr = newString.split("")
+// console.log(stringArr);
+// stringArr.sort()
+
+// console.log(stringArr);
+
+
+const neuNum = String(numArr)
+console.log(neuNum);
+
+const kommaWeg = neuNum.replaceAll(",", "")
+
+console.log("koomaWeg",kommaWeg);
+
+let resultString = [];
+
+for (let i = 0; i < kommaWeg.length; i++) {
+    resultString.push(kommaWeg[i])
+}
+
+console.log(resultString);
+
+console.log(resultString.sort());
