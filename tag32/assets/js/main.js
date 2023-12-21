@@ -39,3 +39,19 @@ textInput.addEventListener("mouseout", () => {
 //   console.log("Die Maus hat mich verlassen");
 //   textInput.style.border = "3px solid blue";
 // });
+
+
+// * ====Change======
+
+const selectInput = document.querySelector("#select-input")
+const selectOutput = document.querySelector("#select-output")
+
+selectInput.addEventListener("change", () => {
+    console.log("ich wurde verändert");
+    selectOutput.innerHTML = selectInput.value
+    selectOutput.style.color = "red"
+})
+
+
+// * =====keypress======
+
