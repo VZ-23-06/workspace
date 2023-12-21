@@ -55,3 +55,46 @@ selectInput.addEventListener("change", () => {
 
 // * =====keypress======
 
+const username = document.querySelector("#username").addEventListener("keypress", () => {
+    const user = document.querySelector("#user")
+    user.style.backgroundColor = "red"
+    user.style.color = "blue"
+})
+
+
+// * ====keyup=======
+
+const hacker = document.querySelector("#hacker")
+const log = document.querySelector("#log")
+
+hacker.addEventListener("keyup", logKey)
+
+function logKey(event) {
+    console.log(event.code);
+}
+
+// ! Externer EventListener 
+// wir können die Function erstmal auslagern, damit wir das ganze genereller halten können
+
+
+
+const liste = document.querySelector("#myList")
+console.log(liste);
+
+const firstChildVonMeinemListe = liste.firstElementChild.innerHTML
+
+console.log(firstChildVonMeinemListe);
+
+const lastChildVonMeinemListe = liste.lastElementChild.style.color = "red"
+
+const geschwisterElementVomAnfang = liste.lastElementChild.previousElementSibling.innerHTML
+
+
+
+console.log(geschwisterElementVomAnfang);
+
+
+
+console.log(lastChildVonMeinemListe);
+
+lastChildVonMeinemListe
