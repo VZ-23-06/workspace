@@ -63,28 +63,16 @@ const anzahlBuchstaben = (satz) => {
         console.log(kleinBuchstaben);
         if (buchstabenArray.includes(kleinBuchstaben)) {
             anzahl++
-
         }
     }
     return anzahl
 }
 
-let text = "Hallo Welt"
+let text = "hallo welt"
 
 let buchstabenAnzahlVomSatz = anzahlBuchstaben(text)
 
 console.log(buchstabenAnzahlVomSatz);
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -96,22 +84,12 @@ console.log(
 
 
 
+const checkAge = (alter) => {
+    let volljährig = alter >= 18 ? "Volljährig" : "Miderjährig"
+    return volljährig
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(checkAge(20));
 
 
 
@@ -123,15 +101,12 @@ console.log(
 );
 
 
-
-
-
-
-
-
-
-
-
+function checkZahl(num) {   //                           true                    false
+    return (num >= 1 && num <= 10)
+        ? 100 / (num * 2)
+        : "Num ist nicht da"
+}
+console.log(checkZahl(10));
 
 
 
@@ -142,17 +117,15 @@ console.log(
 );
 
 
-
-
-
-
-
-
-
-
-
-
-
+const checkAgeFirst = () => {
+    let canVisit = false;
+    userInput = Number(prompt("Bitte gebe dein Alter ein"))
+    canVisit = userInput >= 18 ? true : false
+    console.log(canVisit);
+    canVisit == true
+        ? window.location.replace("./assets/marlboroseite/marlboro.html")
+        : window.location.replace("./assets/marlboroseite/kidspage.html")
+}
 
 // 7. map - string to Uppercase ======
 console.log(
@@ -160,3 +133,9 @@ console.log(
     "color: red; background-color: gold"
 );
 let namesArray = ["Magda", "Johanna", "Jannik", "Lisa"];
+
+
+
+let nameUpperCase = namesArray.map((pizza) => pizza.toUpperCase())
+
+console.log(nameUpperCase);
