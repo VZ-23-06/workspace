@@ -147,3 +147,107 @@ let nameUpperCase = namesArray.map((pizza) => pizza.toUpperCase())
 // * ====== NEUES THEMA =========
 
 
+const articleElement = document.querySelector("#my-article")
+
+console.log(articleElement.innerHTML);
+
+const allArticleElemente = document.querySelectorAll("#my-article")
+
+console.log(allArticleElemente);
+
+
+
+
+const allInfoTexte = document.querySelectorAll(".infoText")
+
+console.log(allInfoTexte);
+
+
+const myFirtChildFromArticle = allInfoTexte[0]
+console.log(myFirtChildFromArticle.textContent);
+
+const rgbFarbe = "rgb(100,40,100)"
+
+allInfoTexte[1].style.color = rgbFarbe
+
+
+allInfoTexte.forEach((pTag) => {
+    pTag.style.color = "red"
+})
+
+// getElementByClassName
+
+const infoTextMitGetElememtByClassName = document.getElementsByClassName("infoText")
+
+
+console.log(infoTextMitGetElememtByClassName);
+
+
+const infoTextMitGetElememtByClassNameToArray = Array.from(infoTextMitGetElememtByClassName)
+
+console.log(infoTextMitGetElememtByClassNameToArray);
+
+
+// getElementsByTagName 
+
+const alleArticleAuswählen = document.getElementsByTagName("article")
+
+console.log(alleArticleAuswählen);
+
+console.log(alleArticleAuswählen[2]);
+
+
+const kinderAusDemAnotherArticleMitGetElementByTagName = Array.from(alleArticleAuswählen[2].children)
+
+
+console.log(kinderAusDemAnotherArticleMitGetElementByTagName);
+
+
+
+
+const selectElement = document.querySelectorAll("#select-test")
+selectElement[1].addEventListener("change", (event) => {
+    console.log(event.target.value);
+})
+
+
+
+
+// Spread Operator
+// das gehört zum Array und damit können wir eine Version von unserem Array kopieren und danach mit kopiertem Version arbeiten
+
+const orginalArray = [1, 2, 3]
+const copiedArray = [...orginalArray]
+
+console.log(copiedArray);
+
+
+const anotherArray = [1, 2, 3, 4, 5]
+console.log(anotherArray);
+const copiedAntotherArray = [...anotherArray, 6, 7]
+
+console.log(copiedAntotherArray);
+
+
+const Hobbies = ["Zocken", "Schwimmen", "malen"]
+
+const todos = ["Wäsche Waschen", "Duschen", "Sport Machen", "Aufräumen", "Kochen"]
+
+console.log(todos);
+
+const MontagTodos = [...todos.splice(1, 3), ...Hobbies.splice(1,2)]
+
+const kopieVonMontagTodos = [...MontagTodos]
+
+
+// const fauleMontag = MontagTodos.shift()
+const duschenRaus = MontagTodos.splice(1, 1)
+console.log(duschenRaus);
+
+console.log(MontagTodos);
+
+
+// console.log(fauleMontag);
+console.log(MontagTodos);
+
+console.log(todos);
