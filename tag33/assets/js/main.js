@@ -2,10 +2,10 @@
 
 // 1.Schreibe eine Funktion names "durchschnittlichesSchnitDerAbitur", die ein Array von Noten akzeptiert, uind den Durchschnitt der Noten Berechnet. Die Funktion soll jeden Wert im Array aufsummieren und anschließen durch die Anzahl der Elemente im Array teilen. (So bekommen wir den Durchschnitt)
 
-console.log(
-    "%c Aufgabe 1 - durchschnittlichesSchnitDerAbitur",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 1 - durchschnittlichesSchnitDerAbitur",
+//     "color: red; background-color: gold"
+// );
 
 const Magda = [1, 1, 2, 2, 3]
 const Philip = [1, 1, 1, 1, 2,]
@@ -25,14 +25,14 @@ const durchsnittlichesAbi = (noten) => {
     return finito
 }
 
-console.log(durchsnittlichesAbi(Magda));
-console.log(durchsnittlichesAbi(Philip));
+// console.log(durchsnittlichesAbi(Magda));
+// console.log(durchsnittlichesAbi(Philip));
 
 // 2.Übergeben Sie eine Parameter(zahl) im Funktionsaufruf und lassen Sie diese zu einer summe addieren
-console.log(
-    "%c Aufgabe 2 - Übergeben Sie eine Parameter(zahl) im Funktionsaufruf und lassen Sie diese zu einer summe addieren",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 2 - Übergeben Sie eine Parameter(zahl) im Funktionsaufruf und lassen Sie diese zu einer summe addieren",
+//     "color: red; background-color: gold"
+// );
 
 
 const SummeDerZahl = (zahl) => {
@@ -44,23 +44,23 @@ const SummeDerZahl = (zahl) => {
     return summe
 }
 
-console.log(SummeDerZahl(10));
+// console.log(SummeDerZahl(10));
 
 
 
 
 // 3. For Loop mit String, Wie oft kommen die vokalen im Satzt vor?
-console.log(
-    "%c Aufgabe 3 - Buchstaben zählen - for loop",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 3 - Buchstaben zählen - for loop",
+//     "color: red; background-color: gold"
+// );
 
 const anzahlBuchstaben = (satz) => {
     let buchstabenArray = ["a", "e", "i", "o", "u"];
     let anzahl = 0;
     for (let i = 0; i < satz.length; i++) {
         let kleinBuchstaben = satz[i].toLowerCase()
-        console.log(kleinBuchstaben);
+        // console.log(kleinBuchstaben);
         if (buchstabenArray.includes(kleinBuchstaben)) {
             anzahl++
         }
@@ -72,15 +72,15 @@ let text = "hallo welt"
 
 let buchstabenAnzahlVomSatz = anzahlBuchstaben(text)
 
-console.log(buchstabenAnzahlVomSatz);
+// console.log(buchstabenAnzahlVomSatz);
 
 
 
 // 4. Tanary Operator - Check Alter
-console.log(
-    "%c Aufgabe 4 - Tanary Operator - Check Alter",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 4 - Tanary Operator - Check Alter",
+//     "color: red; background-color: gold"
+// );
 
 
 
@@ -89,16 +89,16 @@ const checkAge = (alter) => {
     return volljährig
 }
 
-console.log(checkAge(20));
+// console.log(checkAge(20));
 
 
 
 
 // 5. Tanary Operator - Check ob eine zahl zwischen 1-10 ist
-console.log(
-    "%c Aufgabe 5 - Tanary Operator - Check Zahl",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 5 - Tanary Operator - Check Zahl",
+//     "color: red; background-color: gold"
+// );
 
 
 function checkZahl(num) {   //                           true                    false
@@ -106,36 +106,44 @@ function checkZahl(num) {   //                           true                   
         ? 100 / (num * 2)
         : "Num ist nicht da"
 }
-console.log(checkZahl(10));
+// console.log(checkZahl(10));
 
 
 
 // 6. Tanary Operator - Seitenzutritt auf Malboro wenn 18 oder älter
-console.log(
-    "%c Aufgabe 6 - Tanary Operator - Check Zahl",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 6 - Tanary Operator - Check Zahl",
+//     "color: red; background-color: gold"
+// );
 
 
 const checkAgeFirst = () => {
     let canVisit = false;
     userInput = Number(prompt("Bitte gebe dein Alter ein"))
     canVisit = userInput >= 18 ? true : false
-    console.log(canVisit);
+    // console.log(canVisit);
     canVisit == true
         ? window.location.replace("./assets/marlboroseite/marlboro.html")
         : window.location.replace("./assets/marlboroseite/kidspage.html")
 }
 
 // 7. map - string to Uppercase ======
-console.log(
-    "%c Aufgabe 7 - map - string to Uppercase",
-    "color: red; background-color: gold"
-);
+// console.log(
+//     "%c Aufgabe 7 - map - string to Uppercase",
+//     "color: red; background-color: gold"
+// );
 let namesArray = ["Magda", "Johanna", "Jannik", "Lisa"];
 
 
 
 let nameUpperCase = namesArray.map((pizza) => pizza.toUpperCase())
 
-console.log(nameUpperCase);
+// console.log(nameUpperCase);
+
+
+
+
+
+// * ====== NEUES THEMA =========
+
+
