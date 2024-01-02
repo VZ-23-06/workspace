@@ -222,16 +222,35 @@ console.log(nochmalKopie);
 
 
 
-const movies = [
-    {
-
+const movies = {
+    movie1: {
+        name: "GOT",
+        casting: ["name1", "name2", "name3"]
     },
-    {
-
-    }, {
-
+    movie2: {
+        name: "SUITS",
+        casting: ["name1", "name2", "name3"]
+    },
+    movie3: {
+        name: "PRISON BREAK",
+        casting: ["name1", "name2", "name3"]
     }
-]
+}
+
+
+
+
+// movies.forEach((movie) => console.log(movie))
+
+console.log(movies);
+const ObjToArray = Object.entries(movies)
+
+console.log(ObjToArray);
+
+ObjToArray.forEach((movie)=> {
+    console.log(movie);
+})
+
 
 
 let author = {
@@ -309,3 +328,5 @@ myBtn.textContent = "gegner"
 // console.log(myBtn);
 
 myBtn.addEventListener("submit", gegner.logIn(() => { return false }))
+
+
