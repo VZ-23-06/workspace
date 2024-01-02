@@ -2,7 +2,7 @@ const input = document.querySelector("#myInput")
 
 console.log(input);
 
-
+// Definiere ein JavaScript Objekt
 const user = {
     name: "Jim",
     alter: 60,
@@ -19,6 +19,7 @@ console.log({ user });
 
 // document.querySelector("p").innerHTML = ""
 
+// * Zugriff auf die Eigenschaften eines Objektes
 
 console.log(user.alter);
 console.log(user.beruf);
@@ -26,6 +27,8 @@ console.log(user.adresse.stadt);
 
 console.log(user.hobbies[1]);
 
+
+// * Eine andere Variante um auf die Eigenschaften eines Objektes zuzugreifen
 console.log(user["auto"]);
 
 user.alter = 40
@@ -40,6 +43,7 @@ delete user.auto
 
 user.auto = "TESLA"
 
+// * Füge ein neues key-value paar hinzu
 user.verheitet = false
 
 console.log({ user });
@@ -86,9 +90,14 @@ const spieler = {
     class: "Hero",
     level: 100,
     spell: ["heilen", "fliegen", "lazer"],
+    // * Bei arrow functions erfolgt der Zugriff über den Variablennamen
+    // * 🚨🚨 "this" sollte hier nicht verwendet werden, bezieht sich nicht auf das Objekt
+    // * Zuweisung von einer anonymen arrow Funktion zu dem key "logIn"
     login: () => {
         console.log(spieler.name + " " + "ist eingeloggt");
     },
+    // * Hier können wir auch "this" benutzen
+    // * Zuweisung von einer anonymen Funktion zu dem key "castSpell"
     castSpell: function () {
         console.log("castigSpell" + " " + this.spell[0]);
     },
@@ -105,13 +114,13 @@ console.log(spieler);
 
 
 // Obekten Mehtoden => Object.keys()
-
+// ! Erstellt einen Array in dem nur die keys des objektes drin stehen
 const keysVomSpielerObject = Object.keys(spieler)
 
 // console.log(keysVomSpielerObject);
 
 // Object.values()
-
+// ! Erstellt einen Array in dem nur die values des objektes drins stehen
 const valuesVomSpielerObject = Object.values(spieler)
 // console.log(valuesVomSpielerObject);
 
@@ -155,6 +164,7 @@ for (let fach in grades) {
 
 
 console.log(summe);
+// ! Object bietet keinen einfachen Weg an die Länge zu kommen, deshalb benutzen wir hier Object.keys().length
 
 console.log(grades.length);
 
@@ -221,37 +231,40 @@ console.log(nochmalKopie);
 
 
 
+// ! WIESO Object.entries => hier ist ein Beispiel dazu 
 
 const movies = {
     movie1: {
         name: "GOT",
-        casting: ["name1", "name2", "name3"]
+        casting: ["kim", "florian", "alex"]
     },
     movie2: {
         name: "SUITS",
-        casting: ["name1", "name2", "name3"]
+        casting: ["tom", "frank", "jim"]
     },
     movie3: {
         name: "PRISON BREAK",
-        casting: ["name1", "name2", "name3"]
+        casting: ["john", "abdol", "oli"]
     }
 }
-
-
-
-
-// movies.forEach((movie) => console.log(movie))
-
+// ? wir dürfen mit forEach nicht arbeiten, weil forEach nur mit dem Datentyp Array funktioniert
+// ? NO GO => movies.forEach((movie) => console.log(movie)) 
 console.log(movies);
 const ObjToArray = Object.entries(movies)
 
 console.log(ObjToArray);
 
-ObjToArray.forEach((movie)=> {
-    console.log(movie);
+ObjToArray.forEach((movie) => {
+    const casting = movie[1];
+    // console.log(casting);
+    const newArr = Object.values(casting)
+    console.log(newArr[1]);
 })
 
+// ! bis zum hier
 
+
+// * ÜBUNG
 
 let author = {
     firstName: "Kim",
