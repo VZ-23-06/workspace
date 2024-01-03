@@ -78,6 +78,11 @@ document.body.appendChild(div)
 div.innerHTML = date3
 
 
+// ? Wenn wir bei setDate() eine Zahl über der Anzahl der Tage des Monatas angeben, springt das Datum automatisch auf den nächsten Monat
+
+const date4 = new Date();
+date4.setDate(30 + 5);
+console.log(date4);
 
 
 
