@@ -135,4 +135,13 @@ function stopTrain() {
 
 
 
+const backgroundInterval = () => {
+    const rgbFunc = () => Math.floor(Math.random() * 256)
+
+    document.body.style.backgroundColor = `rgb(${rgbFunc()},${rgbFunc()},${rgbFunc()})`
+}
+
+const backgroundColorChange = setInterval(backgroundInterval, 1000)
+
+
 
