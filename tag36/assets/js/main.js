@@ -104,15 +104,6 @@ function VictorBleibMalWach() {
 
 
 
-function clearMyIntervalFunction() {
-    // clearInterval(timerVariable)
-    // * clearInterval ist eine Methode von JS
-    clearInterval(timer2)
-}
-
-
-
-
 const train = document.querySelector("#train")
 
 let leftPos = 0;
@@ -143,5 +134,12 @@ const backgroundInterval = () => {
 
 const backgroundColorChange = setInterval(backgroundInterval, 1000)
 
+
+function clearMyIntervalFunction() {
+    // clearInterval(timerVariable)
+    // * clearInterval ist eine Methode von JS
+    clearInterval(timer2)
+    clearInterval(backgroundColorChange)
+}
 
 
