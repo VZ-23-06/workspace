@@ -84,7 +84,6 @@ setTimeout(sayHello, 5000)
 
 
 
-
 function myTimer() {
     // let clock = document.createElement("div")
     // document.body.appendChild(clock)
@@ -96,8 +95,44 @@ function myTimer() {
 
 let timerVariable = setInterval(myTimer, 1000)
 
+let timer2 = setInterval(VictorBleibMalWach, 1000)
 
-function clearMyInterval() {
-    clearInterval(timerVariable)
+
+function VictorBleibMalWach() {
+    console.log("Du musst wach bleiben");
 }
+
+
+
+function clearMyIntervalFunction() {
+    // clearInterval(timerVariable)
+    // * clearInterval ist eine Methode von JS
+    clearInterval(timer2)
+}
+
+
+
+
+const train = document.querySelector("#train")
+
+let leftPos = 0;
+let trainInterval;
+
+
+function startTrain() {
+    let animationTrain = () => {
+        leftPos += 10;
+        train.style.left = `${leftPos}px`
+    }
+
+    trainInterval = setInterval(animationTrain, 100)
+}
+
+
+function stopTrain() {
+    clearInterval(trainInterval)
+}
+
+
+
 
