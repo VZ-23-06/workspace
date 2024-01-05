@@ -137,4 +137,12 @@ fetch("https://dummyjson.com/products")
     .catch((error) => console.log("die Küche brennt leider", error))
 
 
-    
+
+
+
+// ! LOKAL Fetch
+
+fetch("./assets/data/fakeData.json")
+.then((resp)=> resp.json())
+.then((data)=> console.log(data))
+.catch((err)=> console.log(err))
