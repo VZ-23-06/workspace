@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  background-color: rgb(216, 216, 216);
+  padding: 20px;
+  border-radius: 10px;
+  width: 25vw;
+  margin: 10px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
