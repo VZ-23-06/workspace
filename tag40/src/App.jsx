@@ -22,7 +22,7 @@ function App() {
         <h1>useState</h1>
         <Counter />
         <Form />
-        {/* das linke data ist das,was wir weiter übergeben */}
+        {/* die linke Seite "übergebendeData" ist das,was wir weiter übergeben */}
         <ListItem übergebendeData={data} />
       </div>
 
