@@ -30,9 +30,6 @@ function App() {
 
   })
 
-
-
-
   console.log(todoObj);
 
   console.log(todoObj.title);
@@ -43,7 +40,7 @@ function App() {
 
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-      
+
       <Form
         setObj={setObj}
         obj={obj}
