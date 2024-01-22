@@ -16,7 +16,6 @@ const UserDetail = () => {
     console.log(gesuchteUser);
 
 
-
     return (
         <>
             <h2>UserDetail</h2>

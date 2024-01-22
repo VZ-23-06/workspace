@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <Routes>
-        {/* Hier werden die Adresse useren componenten festgestellt */}
+        {/* Hier werden die Adressen von unseren componenten festgestellt */}
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path="/userlist" element={<UserList />} />
-        {/* was man ab : schreibt ist das, was man als useParams() in UserDetail Component übernehmen */}
+        {/* was man ab : schreibt ist das, was als useParams() in UserDetail Component übernommen wird*/}
         <Route path="/userlist/:pizza" element={<UserDetail />} />
       </Routes>
     </>
