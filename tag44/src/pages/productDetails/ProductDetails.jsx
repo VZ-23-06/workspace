@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { mainContext } from '../../context/mainProvider';
 
 const ProductDetails = () => {
@@ -37,6 +37,8 @@ const ProductDetails = () => {
                         <p>  {product.title}</p>
                         <p>{product.price}</p>
                         <img src={product.images[3]} alt="" />
+                        <p>{product.description}</p>
+                        <Link to="/productlist"><button>Back to Shop</button></Link>
                     </>
                 )
                 :
@@ -45,7 +47,6 @@ const ProductDetails = () => {
                         Loading...
                     </p>
                 )}
-
         </>
     )
 }
