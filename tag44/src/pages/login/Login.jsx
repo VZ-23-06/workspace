@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react'
 import { mainContext } from '../../context/mainProvider'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Login = () => {
 
@@ -8,6 +8,7 @@ const Login = () => {
     const emailVomRef = useRef()
     const passwordVomRef = useRef()
 
+    const navigate = useNavigate()
 
     const { user, setUser } = useContext(mainContext)
     // console.log("User in Login.jsx", user);
@@ -27,7 +28,11 @@ const Login = () => {
             email: emailVomRef.current.value,
             password: passwordVomRef.current.value
         })
-
+        if (!user.userName) {
+            console.log("User not Found");
+        } else {
+            navigate("/profil")
+        }
     }
 
 
