@@ -1,17 +1,15 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 
-
-const Navbar =()=>{
-    return(
+const Navbar = () => {
+    return (
         <>
-            <nav className="navBar">
+            <nav className="flex items-center justify-between">
                 <section>
                     <h2>My Life</h2>
                 </section>
                 <section>
-                    <Link to="/"> Home</Link>
-                    <Link to="/blog"> Blog</Link>
+                    <Link to="/"><button className="text-[#ffa200] underline underline-offset-4 m-2">Home</button></Link>
+                    <Link to="/blog"><button className="text-[#ffa200] underline underline-offset-4 m-2">Blog</button></Link>
                 </section>
             </nav>
         </>

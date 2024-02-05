@@ -1,19 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-
 }
 
-.yellow{
+.yellow {
     background-image: url('img/neon3.jpg');
+
     height: 60vh;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     align-self: stretch;
     z-index: -1;
@@ -21,26 +25,26 @@
     position: relative;
 }
 
-.home-article{
-    padding: 0 0 0 15vw;
+.home-article {
+    padding-bottom: 15vw;
 }
 
-h1{
-    width: 20%;
+h1 {
+    width: 30%;
     font-size: 32px;
     padding-bottom: 15px;
 }
 
-h2{
+h2 {
     color: #ffa200;
 }
 
-p{
-    margin: 2vh 0;
+p {
+    margin-top: 2vh;
     color: #ffa200;
 }
 
-button{
+/* button {
     color: #ffa200;
     border: 3px solid #ffcc00;
     background-color: #ffff;
@@ -52,36 +56,35 @@ button{
     line-height: 19px;
 }
 
-button:hover{
+button:hover {
     background-color: #ffcc00;
     color: #ffff;
     transition: 0.3s;
-}
+} */
 
-nav{
+nav {
     text-align: center;
     padding: 5vh 5vw;
 }
 
-.navBar{
+/* .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-a{
+/* a {
     color: #ffa200;
     text-decoration: underline;
     text-underline-offset: 3px;
-    margin: 5px;
-}
+} */
 
 /* ************************* */
 /* containerSection */
 
 .blog-section {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5em;
     align-content: center;
     margin: 5vh 10vw;
@@ -93,10 +96,10 @@ a{
     width: 280px;
     height: 200px;
     overflow: hidden;
-    box-shadow: 
-    rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .zoom-container .img {
@@ -108,13 +111,13 @@ a{
     border-radius: 10px;
 }
 
-.img{
+.img {
     width: 280px;
     height: 200px;
     border-radius: 10px;
 }
 
-.cover{
+.cover {
     object-fit: cover;
 }
 
@@ -122,37 +125,38 @@ a{
 
 /* detail jsx */
 
-.main-detail{
+/* .main-detail {
     margin-top: 5vh;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-}
+} */
 
-.detail-img {
+/* .detail-img {
     height: 83vh;
     width: 78vw;
     border-radius: 15px 0 0 15px;
-}
+} */
 
-.img-cover{
+/* .img-cover {
     object-fit: cover;
-}
+} */
 
-.detail-info{
+/* .detail-info {
     margin-right: 15vw;
-    margin-top:30px;
+    margin-top: 30px;
     width: 900px;
-}
+} */
 
-.detail-info p:nth-child(3) {
+/* .detail-info p:nth-child(3) {
     font-size: 12px;
-}
+} */
 
-.flex{
+/* .flex {
     display: flex;
     justify-content: space-between;
-}
-.flex p:first-child {
+} */
+
+/* .flex p:first-child {
     font-size: 30px;
-}
+} */
