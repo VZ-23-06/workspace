@@ -6,8 +6,9 @@ const Nav = () => {
         <>
             <div>Nav</div>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/kontaktlist">Kontakte</Link>
+                <Link to="/"><button>Home</button></Link>
+                <Link to="/kontaktlist"><button>Kontakte</button></Link>
+                <Link to="/addkontakt"><button>Add Kontakt</button></Link>
             </nav>
         </>
     )
