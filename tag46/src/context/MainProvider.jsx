@@ -213,6 +213,9 @@ const MainProvider = ({ children }) => {
     const [kontakte, setKontakte] = useState(Data)
 
 
+    localStorage.getItem("kontakte", JSON.stringify(kontakte))
+
+
     // console.log(kontakte);
 
 
