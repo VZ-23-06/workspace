@@ -47,7 +47,6 @@ const AddKontakt = () => {
                 Hobbies: hobbies
             }
             setKontakte([...kontakte, neueKontakt])
-            localStorage.setItem("kontakte", JSON.stringify(neueKontakt))
             navigate("/kontaktlist")
         } catch (error) {
             console.log(error);

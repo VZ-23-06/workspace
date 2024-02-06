@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import { createContext } from 'react'
 
 export const mainContext = createContext()
@@ -210,13 +210,18 @@ const MainProvider = ({ children }) => {
 
 
 
-    const [kontakte, setKontakte] = useState(Data)
+    const [kontakte, setKontakte] = useState(() => {
+        const storedKontakte = JSON.parse(localStorage.getItem('kontakte'));
+        return storedKontakte ? storedKontakte : Data;
+    });
 
 
-    localStorage.getItem("kontakte", JSON.stringify(kontakte))
+
+    useEffect(() => {
+        localStorage.setItem('kontakte', JSON.stringify(kontakte));
+    }, [kontakte]);
 
 
-    // console.log(kontakte);
 
 
     return (
