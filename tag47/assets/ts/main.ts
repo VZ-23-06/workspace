@@ -58,3 +58,31 @@ const nochEinAndererArray : [string, number, boolean]= ["John", 40, false]
 
 
 
+// ! V.1
+
+// interface Person {
+//     name: string,
+//     age: number,
+//     email?: string, // das Fragenzeichen macht das Email in Person jetzt Optional
+//     hobbies: [string, string]
+// }
+
+
+type Person = {
+    name: string,
+    age: number,
+    email?: string,
+    hobbies: [string, string],
+    sayHello?: Function
+}
+
+const user2: Person = {
+    name: "Jacky",
+    age: 20,
+    hobbies: ["Hockey", "Fußball"],
+    sayHello: function(){console.log("Hello Guten Morgen" + " " + this.name);}
+}
+
+
+user2.sayHello()
+

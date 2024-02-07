@@ -34,3 +34,10 @@ switch (num) {
 // ! Array mit verschieden Datentypen
 var mixedArray = ["harald", 42, false];
 var nochEinAndererArray = ["John", 40, false];
+var user2 = {
+    name: "Jacky",
+    age: 20,
+    hobbies: ["Hockey", "Fußball"],
+    sayHello: function () { console.log("Hello Guten Morgen" + " " + this.name); }
+};
+user2.sayHello();
